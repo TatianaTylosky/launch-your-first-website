@@ -2,7 +2,7 @@
 
 ##Your mission if you choose to accept it
 
-You're going to build and **launch live on the interwebs** your own amaze website like [this]() or [this]()!. AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
+You're going to build and **launch live on the interwebs** your own amaze website like [this]() or [this]()! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
 
 ![](http://i.imgur.com/7Col0qO.png)
 
