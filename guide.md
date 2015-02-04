@@ -20,6 +20,6 @@ Yourself, a computer, and the internet. In this tutorial, we'll start from the v
 
 ##Learn HTML/CSS
 
-Download and open up sublime.
+Download and open up Sublime Text 2. This is a great text editor. ery clean interface. Once you can navigate it (learning curve isn't that big), it's pretty dreamy. Like your face.
 
 ##
