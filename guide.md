@@ -26,6 +26,7 @@ Download and open up Sublime Text 2. This is a great text editor. ery clean inte
 
 1) Download Sublime Text: Sublime Text is a text editor (like Microsoft Word or Google Docs) made for programmers. It can be downloaded [here](http://www.sublimetext.com/3) . Download and open it. The initial page should look like this:
 
+![](images/sublime.png)
 
 
 
