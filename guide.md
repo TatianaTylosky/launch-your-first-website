@@ -18,7 +18,7 @@ This guide is based on the principle of [project-driven learning](http://blog.th
 
 Yourself, a computer, and the internet. In this tutorial, we'll start from the very beginning. You don't need to know anything about HTML and CSS or anything about code to start so take a deep breath. You've got this.
 
-##Sublime Setup
+##Setup and test run
 
 Since a website is just a file, let's start by creating a file. In order to create a file we need a text editor.
 
@@ -26,7 +26,10 @@ Download and open up Sublime Text 2. This is a great text editor. ery clean inte
 
 1) Download Sublime Text: Sublime Text is a text editor (like Microsoft Word or Google Docs) made for programmers. It can be downloaded [here](http://www.sublimetext.com/3) . Download and open it. The initial page should look like this:
 
-![](images/sublime.png)
+  ![](images/sublime.png)
 
+  A full featured version of Sublime Text can be downloaded directly from Sublime for free and used forever without paying. The caveat is that it will prompt you to consider paying. It is a great piece of software and if you'd like to support their developers, feel free to do so.
 
+2) Test run. Add your content: In this blank file, you will type the content of your site. type "hello world" and then open up your file in an internet browser.
 
+GIF HERE OF THIS PROCESS
