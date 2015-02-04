@@ -12,10 +12,14 @@ You're going to build and **launch live on the interwebs** your own amaze websit
 
 Because this stuff is important. Whether you're a business person formatting your emails, an aspiring web designer wanting to get your feet wet, or just someone who is interested and hasn't tried any sort of coding, scripting, or programming before, HTML and CSS are an essential part of your learning curve.
 
+This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something works the best. Throughout this guide we will use GIF images to make everything as clear as possible.
+
 ##What do I need?
 
 Yourself, a computer, and the internet. In this tutorial, we'll start from the very beginning. You don't need to know anything about HTML and CSS or anything about code to start so take a deep breath. You've got this.
 
 ##Learn HTML/CSS
+
+Download and open up sublime.
 
 ##
