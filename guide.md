@@ -74,9 +74,13 @@ GIF HERE OF THIS PROCESS
 
 ##Wireframe your personal site
 
-You are going to create a "wireframe" of what you what you want your site to look like. Keep it simple, this is meant to be something you work off of and it will change as you go along.
+You are going to create a "wireframe" of what you what you want your site to look like. A wireframe is a detailed sketch of your design. In the same way an architect draws a plan of a house before building, create a detailed sketch of what you're looking to build before you start coding. The wireframe we have to work with is fairly detailed:
 
 ![](images/wireframeannotated.png)
+
+Keep things simple for your first site. Remember that you can always go back and update with a new version! We've got plenty of examples to give you some inspiration. Try not to spend too much time making this perfect, the goal is to have something you can refer to and work off of when you code up your page.
+
+Note: It's not a bad idea to answer the 'About Me' content questions in Sublime Text and save as a ".txt" file. This will easily allow you to copy and paste the answers into your html file later.
 
 ##Structure your HTML
 
