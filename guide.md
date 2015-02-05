@@ -24,15 +24,22 @@ Table of contents (for Tati's sake):
 
 ###Your mission if you choose to accept it
 
+Tati notes: You need to make the examples to add to this. Get better example pic too.
+
 You're going to build and **launch live on the interwebs** your own amaze website like [this]() or [this]()! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
 
+Here is an example:
 ![](http://i.imgur.com/7Col0qO.png)
 
-###Why should you do this guide?
+###Why learn HTML/CSS?
 
-Because this stuff is important. Whether you're a business person formatting your emails, an aspiring web designer wanting to get your feet wet, or just someone who is interested and hasn't tried any sort of coding, scripting, or programming before, HTML and CSS are an essential part of your learning curve.
+Tati notes: This copy needs changing, but all the ideas are there.
 
-This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something works the best. Throughout this guide we will use GIF images to make everything as clear as possible.
+Because this stuff is important. Whether you're a business person formatting your emails, an aspiring web designer wanting to get your feet wet, or just someone who is interested and hasn't tried any sort of coding, scripting, or programming before, HTML and CSS are an essential part of your learning curve. And your final product will be your own personal website that you can show off to your friends or even companies who you apply to.
+
+###Guide Philosophy
+
+This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something is the best. We also think everything should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to make everything as clear as possible.
 
 ###What do I need?
 
@@ -40,21 +47,34 @@ Yourself, a computer, and the internet. In this tutorial, we'll start from the v
 
 ##Setup and test run
 
+Tati notes: They should type out something cooler than hello world
+
 Since a website is just a file, let's start by creating a file. In order to create a file we need a text editor.
 
-Download and open up Sublime Text 2. This is a great text editor. ery clean interface. Once you can navigate it (learning curve isn't that big), it's pretty dreamy. Like your face.
-
-1) Download Sublime Text: Sublime Text is a text editor (like Microsoft Word or Google Docs) made for programmers. It can be downloaded [here](http://www.sublimetext.com/3) . Download and open it. The initial page should look like this:
+1) Download Sublime Text: Sublime Text is a text editor (like Microsoft Word or Google Docs) made for programmers. It can be downloaded [here](http://www.sublimetext.com/3). Download and open it. The initial page should look like this:
 
   ![](images/sublime.png)
 
-  A full featured version of Sublime Text can be downloaded directly from Sublime for free and used forever without paying. The caveat is that it will prompt you to consider paying. It is a great piece of software and if you'd like to support their developers, feel free to do so.
 
-2) Test run. Add your content: In this blank file, you will type the content of your site. type "hello world" and then open up your file in an internet browser.
+2) Do a test run: In this blank file type out the following code and save the file as "index.html"
+
+<code>
+<html>
+  <p>Hello World!</p>
+</html>
+</code>
+
+GIF here
+
+3) Look at your file in an internet browser: Open your "index.html" file using your internet browser. On most browsers you do this by selecting Using file --> open file.
 
 GIF HERE OF THIS PROCESS
 
+4) [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.**
+
 ##Wireframe your personal site
+
+You are going to create a "wireframe" of what you what you want your site to look like. Keep it simple, this is meant to be something you work off of and it will change as you go along.
 
 ![](images/wireframeannotated.png)
 
