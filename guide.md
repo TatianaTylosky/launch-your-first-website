@@ -1,3 +1,23 @@
+Table of contents (for Tati's sake):
+
+#Build your first website
+  ##Welcome!
+    ###Your mission if you choose to accept it
+    ###Why should you do this guide?
+    ###What do I need?
+  ##Setup and test run
+  ##Wireframe your personal site
+  ##Structure your HTML
+  ##Header
+  ##Middle
+  ##Footer
+  ##Positioning and Layout
+  ##Upgrade your font
+  ##Style your page
+  ##Get your site live using Github pages
+
+--------------------------------------
+
 #Build your first website
 
 ##Welcome!
@@ -33,3 +53,23 @@ Download and open up Sublime Text 2. This is a great text editor. ery clean inte
 2) Test run. Add your content: In this blank file, you will type the content of your site. type "hello world" and then open up your file in an internet browser.
 
 GIF HERE OF THIS PROCESS
+
+##Wireframe your personal site
+
+![](images/wireframeannotated.png)
+
+##Structure your HTML
+
+##Header
+
+##Middle
+
+##Footer
+
+##Positioning and Layout
+
+##Upgrade your font
+
+##Style your page
+
+##Get your site live using Github pages
