@@ -1,37 +1,15 @@
-Table of contents (for Tati's sake):
-
-#Build your first website
-  ##Welcome!
-    ###Your mission if you choose to accept it
-    ###Why should you do this guide?
-    ###What do I need?
-  ##Setup and test run
-  ##Wireframe your personal site
-  ##Structure your HTML
-  ##Header
-  ##Middle
-  ##Footer
-  ##Positioning and Layout
-  ##Upgrade your font
-  ##Style your page
-  ##Get your site live using Github pages
-
---------------------------------------
-
 #Build your first website
 
 ##Welcome!
 
 ###Your mission if you choose to accept it
 
-Tati notes: You need to make the examples to add to this. Get better example pic too.
-
 You're going to build and **launch live on the interwebs** your own amaze website like [this]() or [this]()! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
 
 Your final product will be your own personal website that you can show off to your friends or even companies who you apply to.
 
 Here is an example:
-![](http://i.imgur.com/7Col0qO.png)
+![](images/brendon.png)
 
 ###Why learn HTML/CSS?
 
