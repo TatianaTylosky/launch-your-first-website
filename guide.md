@@ -36,7 +36,8 @@ Since a website is just a file, let's start by creating a file. In order to crea
 
 2) Do a test run: In this blank file type out the following code and save the file as "index.html" in a folder called "my website".
 
-  <code><!doctype html>
+```html
+  <!doctype html>
   <html>
     <head>
         <title>
@@ -47,6 +48,7 @@ Since a website is just a file, let's start by creating a file. In order to crea
         I can haz code?!  
     </body>
   </html></code>
+```
 
 GIF HERE
 
