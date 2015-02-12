@@ -161,18 +161,13 @@ In the past, you might have seen similar tutorials use the div tag for dividing 
 
 ##Header
 
+Let's add the header! When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Brendon!", and 3) a background image. Notice that in the header the small text and large text are centered both horizontally and vertically.
+
 ###Steps
 
-When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Brendon!", and 3) a background image.
+1) Start by adding the text content to your HTML:
 
-Analyze the wireframe
-The small text and large text are centered both horizontally and vertically.
-
-centeredheadercopy.png
-
-Coding
-Start by adding the text content to your HTML in CodePen:
-
+<code>
 <header>  
     <p>Hi, I'm</p>
     <h1>Name!</h1> 
@@ -185,10 +180,13 @@ Start by adding the text content to your HTML in CodePen:
 </section>
 <footer>
 </footer>
-Now to get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
+</code>
+
+2) Center your header text: Now to get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
 
 Add the following code to yours:
 
+<code>
 <header class="masthead">  
     <p class="masthead-intro">Hi, I'm</p>
     <h1 class="masthead-heading">Name!</h1> 
@@ -201,34 +199,48 @@ Add the following code to yours:
 </section>
 <footer>
 </footer>
-The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
+</code>
 
-Now in our CSS, you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
+***Theory:
+The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.***
 
+3) Style your masthead text: Now in our CSS, you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
+
+<code>
 .masthead-intro {
 
 }
-This selects the masthead-intro class. Now in between the curly braces let's type the following:
+</code>
 
+4) This selects the masthead-intro class. Now in between the curly braces let's type the following:
+
+<code>
 .masthead-intro {
     text-align: center;
 }
-The "masthead-heading" text is also text-aligned center. You could copy and paste the same code above but replace .masthead with .masthead-heading or you could just add the ".masthead-heading" above the ".masthead-intro" selector with a comma like this:
+</code>
 
+5) The "masthead-heading" text is also text-aligned center. You could copy and paste the same code above but replace .masthead with .masthead-heading or you could just add the ".masthead-heading" above the ".masthead-intro" selector with a comma like this:
+
+<code>
 .masthead-heading,
 .masthead-intro {
     text-align: center;
 }
-Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
+</code>
 
+6) Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
+
+***Theory:
 Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin.
 
-boxmodel
+![](images/boxmodel.png)
 
-Increasing padding increases the distance between your element and its border. Increasing a margin adds more space outside of your element's border.
+Increasing padding increases the distance between your element and its border. Increasing a margin adds more space outside of your element's border.***
 
-With this knowledge, add this to your CSS:
+7) With this knowledge, add this to your CSS:
 
+<code>
 .masthead {
     padding: 6em 0;
 }
@@ -240,6 +252,9 @@ With this knowledge, add this to your CSS:
 .masthead-heading {
     margin-top: -0.2em;
 }
+</code>
+
+***Theory:
 By using padding for the "masthead" class you're making that class bigger. By using margin for the masthead-intro and "masthead-heading" class you're pushing other elements away from it.
 
 Padding shorthand: In the "masthead" class you can indicate that there's padding: 6em 0;. The first number value (6em) represents padding top and bottom while the second number value (0) represents padding right and left.This is written in short hand. You could have instead wrote, padding-top: 6em, padding-bottom: 6em, padding-left: 0em, padding-right: 0em. There are several shorthand CSS properties that can be referenced here .
@@ -247,19 +262,19 @@ Using em: Ems are a unit of measure that isn't fixed like inches or centimeters.
 Negative measurements: You're using a negative margin to bring two elements closer together than the standard margin given.
 
 
-The quality of your cover image greatly impacts the quality of your site. Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer.
+The quality of your cover image greatly impacts the quality of your site. Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer.***
 
-To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
+8) To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
 
+<code>
 .masthead {
   background-image: url('http://i.imgur.com/dCgHi.jpg');
 }
+</code>
+
 There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
 
 The example also has a little strip of color at the very top of the masthead cover image. Use the border-top property in your CSS to accomplish the same effect.
-
-
-
 
 ##Middle
 
