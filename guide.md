@@ -72,11 +72,11 @@ Since a website is just a file, let's start by creating a file. In order to crea
 </html>
 </code>
 
-GIF here
+GIF HERE
 
 3) Look at your file in an internet browser: Open your "index.html" file using your internet browser. On most browsers you do this by selecting Using file --> open file. Your browser should display the text "I can has code?!"
 
-GIF HERE OF THIS PROCESS
+GIF HERE
 
 4) [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.**
 
@@ -98,52 +98,70 @@ On the other side of the planet, we have <body></body>. Everything visible to th
 
 ##Wireframe your personal site
 
-1) Sketch up your site: You are going to create a "wireframe". A wireframe is a detailed sketch of your design. In the same way an architect draws a plan of a house before building, make sketch of what you're looking to build before you start coding. Here is an example:
+You are going to create a "wireframe". A wireframe is a sketch of your design.
+
+###Steps
+
+1) Sketch up your site: In the same way an architect draws a plan of a house before building, make sketch of what you're looking to build before you start coding. Here is an example:
 
 ![](images/wireframeannotated.png)
 
 Keep things simple for your first site. Remember that you can always go back and update with a new version! We've got plenty of examples to give you some inspiration. Try not to spend too much time making this perfect, the goal is to have something you can refer to and work off of when you code up your page.
 
-SHOULD I INCLUDE THIS? 2) Write your bio: This will probably take some time, but go ahead and write the text you would like to display on your site. Note: It's not a bad idea to answer the 'About Me' content questions in Sublime Text and save as a ".txt" file. This will easily allow you to copy and paste the answers into your html file later.
+Examples:
+- list them here
+
+2) Write your bio: This will probably take some time, but write the text you would like to display on your site.
+
+Note: It's not a bad idea to write this in Sublime Text and save as a ".txt" file. This will easily allow you to copy and paste the answers into your html file later.
+
+###What did you just do?
+
+Wireframing is an important technique for web development and it will help you organize your thoughts before jumping into codig up your page.
 
 ##Structure your HTML
 
-1) On line 1 add: <!DOCTYPE html>. This lets your browser know that you're using the newest version of HTML: version 5.
+Let's create the different sections your sketched in your wireframe.
 
-2) Next add the opening HTML tag (<html>) and the closing HTML tag (</html>). Everything between these HTML tags will be interpreted as HTML.
+###Steps
 
-3) Below <html> add the <head> tag and the </head> tag. The <head> tags contains information that influences your site, but doesn't actually show up in the browser.
-
-4) Between the <head> tags add <meta charset="UTF-8">. The charset tells the browser which character set to use. You are using UTF-8 which supports nearly all the characters in the world.
-
-5) Also between the <head> tags add a title between opening and closing title tags (<title>The Fresh Prince of Bel-Air</title>). These tags set the title of the document which will appear on the browser tab and in search results. It is often the same as the <h1> text.
-
-6) Finally, put opening and closing <body> tags around the items you want displayed on the site. For this site you put the opening tag before the header and the closing tag after the paragraph.
-
-All HTML sites have these four elements: a DOCTYPE declaration at the top of the page, opening and closing <html> tags, a <head> section, and a <body>section.
-
-Go to your previously created "About Me Page" pen. Usually you would start with your standard HTML elements: Doctype, <head> section, and <body> section. Since you're using CodePen, all of those things are included, so just go straight to coding what will be in the <body section.
+1) Add new header, section, and footer tags inside of your <body></body> tags.
 
 Your first section is a header, so use the <header> tags to create this section. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
 
-<header>   
-</header>
-<section>  
-</section>
-<section>  
-</section>
-<section>  
-</section>
-<footer>
-</footer>
 
-Theory
+<code>
+<!doctype html>
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+    </head>
+    <body>
+        <header>   
+        </header>
+        <section>  
+        </section>
+        <section>  
+        </section>
+        <section>  
+        </section>
+        <footer>
+        </footer>
+    </body>
+</html>
+</code>
+
+###What did you just do?
 
 You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - header, section, and footer. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
 
 In the past, you might have seen similar tutorials use the div tag for dividing the page. While the div tag does mean division and isn't technically wrong, it has no semantic meaning. Keep an eye out for more specific elements than just div in the future. There's sometimes a better HTML5 element to represent content than a plain div. The same can be said for using <tables> tags to create column sections -- it's bad practice.
 
 ##Header
+
+###Steps
 
 When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Brendon!", and 3) a background image.
 
