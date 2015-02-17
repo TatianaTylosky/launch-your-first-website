@@ -47,7 +47,7 @@ Since a website is just a file, let's start by creating a file. In order to crea
     <body>
         I can haz code?!  
     </body>
-  </html></code>
+  </html>
 ```
 
 GIF HERE
@@ -108,7 +108,7 @@ Let's create the different sections your sketched in your wireframe.
 Your first section is a header, so use the <header> tags to create this section. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
 
 
-<code>
+```html
 <!doctype html>
 <html>
     <head>
@@ -129,7 +129,7 @@ Your first section is a header, so use the <header> tags to create this section.
         </footer>
     </body>
 </html>
-</code>
+```
 
 ###What did you just do?
 
@@ -145,7 +145,7 @@ Let's add the header! When you look at the header's design, you see three things
 
 1) Start by adding the text content to your HTML:
 
-<code>
+```html
 <header>  
     <p>Hi, I'm</p>
     <h1>Name!</h1> 
@@ -158,13 +158,13 @@ Let's add the header! When you look at the header's design, you see three things
 </section>
 <footer>
 </footer>
-</code>
+```
 
 2) Center your header text: Now to get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
 
 Add the following code to yours:
 
-<code>
+```html
 <header class="masthead">  
     <p class="masthead-intro">Hi, I'm</p>
     <h1 class="masthead-heading">Name!</h1> 
@@ -177,35 +177,35 @@ Add the following code to yours:
 </section>
 <footer>
 </footer>
-</code>
+```
 
 ***Theory:
 The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.***
 
 3) Style your masthead text: Now in our CSS, you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
-<code>
+```css
 .masthead-intro {
 
 }
-</code>
+```
 
 4) This selects the masthead-intro class. Now in between the curly braces let's type the following:
 
-<code>
+```css
 .masthead-intro {
     text-align: center;
 }
-</code>
+```
 
 5) The "masthead-heading" text is also text-aligned center. You could copy and paste the same code above but replace .masthead with .masthead-heading or you could just add the ".masthead-heading" above the ".masthead-intro" selector with a comma like this:
 
-<code>
+```css
 .masthead-heading,
 .masthead-intro {
     text-align: center;
 }
-</code>
+```
 
 6) Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
 
@@ -218,7 +218,7 @@ Increasing padding increases the distance between your element and its border. I
 
 7) With this knowledge, add this to your CSS:
 
-<code>
+```css
 .masthead {
     padding: 6em 0;
 }
@@ -230,7 +230,7 @@ Increasing padding increases the distance between your element and its border. I
 .masthead-heading {
     margin-top: -0.2em;
 }
-</code>
+```
 
 ***Theory:
 By using padding for the "masthead" class you're making that class bigger. By using margin for the masthead-intro and "masthead-heading" class you're pushing other elements away from it.
@@ -244,11 +244,11 @@ The quality of your cover image greatly impacts the quality of your site. Check 
 
 8) To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
 
-<code>
+```css
 .masthead {
   background-image: url('http://i.imgur.com/dCgHi.jpg');
 }
-</code>
+```
 
 There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
 
