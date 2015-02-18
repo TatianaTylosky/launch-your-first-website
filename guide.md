@@ -76,7 +76,7 @@ Let's start by creating a HTML file and opening it using a web browser.
 
 
 ###Theory:
-HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like <sometag>. There are normally matching opening and closing tags such as <head> and </head>. You can also put tags inside other tags (like we did with the <title> tags inside the <head> tags). This is called nesting elements. In this case, we would say that the <head> contains the <title>. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as <title> is indented further than <head>).
+HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`).
 
 ```html
   <!doctype html>
@@ -92,7 +92,7 @@ HTML (HyperText Markup Language) consists of these things called tags, which are
   </html>
 ```
 
-Every HTML document and website has to have the special tag <!doctype html> and it tells the browser what language we're using. This is one of those special tags I mentioned that doesn't need a closing tag. Everything in the website is contained by the <html> tag, and the last line of your entire document will always be </html>. Inside <html>, there are two elements: <head> and <body>. Contained in <head></head>, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have <title>. The content of <title> will be used for the name of the tab of the browser, and also by search engines. On the other side of the planet, we have <body></body>. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
+Every HTML document and website has to have the special tag `<!doctype html>` and it tells the browser what language we're using. This is one of those special tags I mentioned that doesn't need a closing tag. Everything in the website is contained by the `<html>` tag, and the last line of your entire document will always be `</html>`. Inside `<html>`, there are two elements: `<head>` and `<body>`. Contained in `<head></head>`, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have `<title>`. The content of `<title>` will be used for the name of the tab of the browser, and also by search engines. On the other side of the planet, we have `<body></body>`. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
 
 
 
@@ -133,16 +133,11 @@ Let's create the different parts of your website: header, sections, and footer.
             </title>
         </head>
         <body>
-            <header>   
-            </header>
-            <section>  
-            </section>
-            <section>  
-            </section>
-            <section>  
-            </section>
-            <footer>
-            </footer>
+            <header></header>
+            <section></section>
+            <section></section>
+            <section></section>
+            <footer></footer>
         </body>
     </html>
     ```
@@ -177,14 +172,10 @@ Let's add the header! When you look at the header's design, you see three things
         <p>Hi, I'm</p>
         <h1>Name!</h1> 
     </header>
-    <section>  
-    </section>
-    <section>  
-    </section>
-    <section>  
-    </section>
-    <footer>
-    </footer>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
     ```
 
 2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
@@ -196,14 +187,10 @@ Let's add the header! When you look at the header's design, you see three things
         <p class="masthead-intro">Hi, I'm</p>
         <h1 class="masthead-heading">Name!</h1> 
     </header>
-    <section>  
-    </section>
-    <section>  
-    </section>
-    <section>  
-    </section>
-    <footer>
-    </footer>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
     ```
 
     The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
@@ -272,7 +259,8 @@ Let's add the header! When you look at the header's design, you see three things
 
     ```css
     .masthead {
-      background-image: url('http://i.imgur.com/dCgHi.jpg');
+        padding: 6em 0;
+        background-image: url('http://i.imgur.com/dCgHi.jpg');
     }
     ```
 
@@ -290,9 +278,6 @@ Let's add the header! When you look at the header's design, you see three things
 
 ###The HTML
 
-Welcome back! As always, start by analyzing the wireframe.
-
-Analyze the wireframe
 When looking at the design's three middle sections, there are a few things you should notice:
 
 The three sections are all marked with a prominent header and paragraph text.
@@ -303,7 +288,7 @@ These observations will direct how you code these sections.
 1.2.6_analysis.png
 
 Coding
-Go ahead and add the raw content into the HTML using <h1> tags for your prominent headers, <h2> tags for your secondary headers, and <p> tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
+Go ahead and add the raw content into the HTML using `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
 
 ```html
 <section>
@@ -356,9 +341,9 @@ Add dedicated CSS class attributes to each section. For section one add class="i
 Theory: When to add classes
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
 
-Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the <h1> tags within a section without defining a separate class for them.
+Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the `<h1>` tags within a section without defining a separate class for them.
 
-Using this guiding principle, you will not add classes for any of the <h1>, <h2>, or <p> tags for this project.
+Using this guiding principle, you will not add classes for any of the `<h1>`, `<h2>`, or `<p>` tags for this project.
 
 ###The CSS
 
@@ -441,7 +426,7 @@ Notice that the footer is text-aligned center just like the header. You also see
 footeranalysis.png
 
 Coding
-Back in your HTML, add the following class attributes to your footer tags and content. A few tags that you'll use include: <ul> which stands for unordered list, <li> which stands for list items within the unordered list, and <a> tag with an href attribute which is used for linked text. Your code should look like this:
+Back in your HTML, add the following class attributes to your footer tags and content. A few tags that you'll use include: `<ul>` which stands for unordered list, `<li>` which stands for list items within the unordered list, and `<a>` tag with an href attribute which is used for linked text. Your code should look like this:
 
 ```html
 <footer class="content-footer">
@@ -496,7 +481,7 @@ Make sure to take the time to really understand these changes:
 
 You've given the entire footer the class "content-footer".
 The text, "Say hi to me on these social networks:", is wrapped in paragraph tags.
-The three links to GitHub, Twitter, and Google+ are within an unordered list tag (<ul>) with the class, "social", and each link is a list item (<li>) with links in them (<a>).
+The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, "social", and each link is a list item (`<li>`) with links in them (`<a>`).
 In CSS, you're now able to center the section. Add the ".content-footer" class to the code that centers your three middle sections. Your code should look like this:
 
 ```css
@@ -529,11 +514,14 @@ Next, get all of the links in your list on the same line. To do this, you need t
 }
 ```
 
-Use a specific selector here. .social > li selects all of the <li> tags within the .social class. The ">" selector means that only li elements that are direct children of the .social class will be displayed as inline-blocks.
+Use a specific selector here. .social > li selects all of the `<li>`s tags within the .social class. The ">" selector means that only li elements that are direct children of the .social class will be displayed as inline-blocks.
 
 Your footer needs a paragraph linking to the image source:
 
+```html
 <p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
+```
+
 In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
 ```css
