@@ -21,26 +21,12 @@ Yourself, a computer, and the internet. In this tutorial, we'll start from the v
 
 Because this stuff is important. Whether you're a business person formatting your emails, an aspiring web designer wanting to get your feet wet, or just someone who is interested and hasn't tried any sort of coding, scripting, or programming before, HTML and CSS are an essential part of your learning curve.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##Setup and test run
 
 Overview: 
 Let's start by creating a HTML file and opening it using a web browser.
 
-###Steps:
+Steps:
 
 1. Create a folder where you are going to save your website's files such as "My Website".
 
@@ -119,7 +105,7 @@ Every HTML document and website has to have the special tag `<!doctype html>` an
 
 Let's create the different parts of your website: header, sections, and footer.
 
-###Steps
+Steps
 
 1. Add new header, section, and footer tags inside of your `<body></body>` tags. The first is the header, so use the `<header>` tags. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use `<section>` tags for each of them. Lastly, use a `<footer>` tag for your footer. Your structure should now look like this:
 
@@ -146,24 +132,13 @@ Let's create the different parts of your website: header, sections, and footer.
 
 You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - header, section, and footer. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
 
-
-
-
-
-
-
-
-
-
-
-
 ##Header
 
 Let's add the header! When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Brendon!", and 3) a background image. Notice that in the header the small text and large text are centered both horizontally and vertically.
 
 ![](images/headers.png)
 
-###Steps
+Steps:
 
 1. Start by adding the text content to your HTML:
 
@@ -285,60 +260,57 @@ The last section titled, "More About Me" has sub headers.
 All of this content is centered in the middle of the page but the text is aligned left.
 These observations will direct how you code these sections.
 
-1.2.6_analysis.png
+1. Go ahead and add the raw content into the HTML using `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
 
-Coding
-Go ahead and add the raw content into the HTML using `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
+    ```html
+    <section>
+        <h1>Introduction</h1>
+        <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
+        <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
+    </section>
+    <section>
+        <h1>Where I'm From</h1>
+        <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
+    </section>
+    <section>
+        <h1>More About Me</h1>
+        <h2>What are your favorite hobbies?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE_</p>
+        <h2>What's your dream job?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+    </section>
+    ```
 
-```html
-<section>
-    <h1>Introduction</h1>
-    <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
-    <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
-</section>
-<section>
-    <h1>Where I'm From</h1>
-    <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
-</section>
-<section>
-    <h1>More About Me</h1>
-    <h2>What are your favorite hobbies?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE_</p>
-    <h2>What's your dream job?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-</section>
-```
+2. Add dedicated CSS class attributes to each section. For section one add class="introduction-section". For section two add class="location-section". For section three add class="questions-section". Your code should now look like this:
 
-Add dedicated CSS class attributes to each section. For section one add class="introduction-section". For section two add class="location-section". For section three add class="questions-section". Your code should now look like this:
+    ```html
+    <section class="introduction-section">
+        <h1>Introduction</h1>
+        <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
+        <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
+    </section>
+    <section class="location-section">
+        <h1>Where I'm From</h1>
+        <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
+    </section>
+    <section class="questions-section">
+        <h1>More About Me</h1>
+        <h2>What are your favorite hobbies?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE_</p>
+        <h2>What's your dream job?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+    </section>
+    ```
 
-```html
-<section class="introduction-section">
-    <h1>Introduction</h1>
-    <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
-    <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
-</section>
-<section class="location-section">
-    <h1>Where I'm From</h1>
-    <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
-</section>
-<section class="questions-section">
-    <h1>More About Me</h1>
-    <h2>What are your favorite hobbies?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE_</p>
-    <h2>What's your dream job?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-</section>
-```
-
-Theory: When to add classes
+Theory:
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
 
 Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the `<h1>` tags within a section without defining a separate class for them.
@@ -352,6 +324,7 @@ As you begin positioning the middle section with CSS, remind yourself of the thr
 The three sections are all marked with a prominent header and paragraph text.
 The last section titled, "More About Me" has sub-headers.
 All of this content is centered in the middle of the page but the text is aligned left.
+
 Coding
 Now that all of your HTML is marked up, it's time to adjust the CSS. All of the sections should be centered, while the text within each section is left-aligned. This is best way to center a section:
 
