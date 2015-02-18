@@ -170,7 +170,16 @@ Steps:
 
     The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
-3. Create a new file called "style.css".
+3. Create a new file called "style.css" in your folder and add the following line of code to your index.html file in between the `<head></head>` tags.
+
+```html
+    <head>
+        <title>
+            My Website
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+```
 
 4. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
@@ -236,8 +245,13 @@ Steps:
     .masthead {
         padding: 6em 0;
         background-image: url('http://i.imgur.com/dCgHi.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: solid 10px white;
     }
     ```
+
+10. Refresh index.html file and check out your page!
 
 ######There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
 

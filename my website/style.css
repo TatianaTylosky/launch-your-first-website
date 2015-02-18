@@ -1,0 +1,23 @@
+.masthead-heading,
+.masthead-intro {
+	text-align: center;
+}
+
+.masthead {
+    padding: 6em 0;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+}
+
+.masthead {
+	background-image: url('http://i.imgur.com/fR0311v.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: solid 10px gold;
+}
