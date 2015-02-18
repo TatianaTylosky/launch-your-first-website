@@ -482,27 +482,36 @@ The text, "Say hi to me on these social networks:", is wrapped in paragraph tags
 The three links to GitHub, Twitter, and Google+ are within an unordered list tag (<ul>) with the class, "social", and each link is a list item (<li>) with links in them (<a>).
 In CSS, you're now able to center the section. Add the ".content-footer" class to the code that centers your three middle sections. Your code should look like this:
 
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
+    ```css
+    .content-footer,
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+    ```
+
 You're now able to center the footer text. Add the ".content-footer" class to the same selector used for text-aligning code in your header. Your code should look like this:
 
-.masthead-intro,
-.masthead-heading,
-.content-footer {
-    text-align: center;
-}
+    ```css
+    .masthead-intro,
+    .masthead-heading,
+    .content-footer {
+        text-align: center;
+    }
+    ```
+
 Next, get all of the links in your list on the same line. To do this, you need to use the "display" property and the "inline-block" value. Your CSS should look like this:
 
+```css
 .social > li {
     display: inline-block;
 }
+```
+
 Use a specific selector here. .social > li selects all of the <li> tags within the .social class. The ">" selector means that only li elements that are direct children of the .social class will be displayed as inline-blocks.
 
 Your footer needs a paragraph linking to the image source:
@@ -510,9 +519,13 @@ Your footer needs a paragraph linking to the image source:
 <p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
 In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
+```css
 .content-footer > p {
  color: white;
 }
+```
+
+
 Theory: Centering things
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring margin-left: auto;, margin-right:auto;. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
@@ -541,77 +554,81 @@ Before moving to the next section, Typography, let's make sure that our HTML is 
 
 Your HTML should look like this:
 
-<header class="masthead">  
-    <p class="masthead-intro">Hi, I'm</p>
-    <h1 class="masthead-heading">Name!</h1> 
-</header>
-<section class="introduction-section">
-    <h1>Introduction</h1>
-    <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
-    <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
-</section>
-<section class="location-section">
-    <h1>Where I'm From</h1>
-    <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
-</section>
-<section class="questions-section">
-    <h1>More About Me</h1>
-    <h2>What are your favorite hobbies?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE_</p>
-    <h2>What's your dream job?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-</section>
-<footer class="content-footer">
-    <p>Say hi to me on these social networks:</p>
-    <ul class="social">
-        <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
-        <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
-        <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
-    </ul>
-</footer>
+    ```html
+    <header class="masthead">  
+        <p class="masthead-intro">Hi, I'm</p>
+        <h1 class="masthead-heading">Name!</h1> 
+    </header>
+    <section class="introduction-section">
+        <h1>Introduction</h1>
+        <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
+        <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
+    </section>
+    <section class="location-section">
+        <h1>Where I'm From</h1>
+        <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
+    </section>
+    <section class="questions-section">
+        <h1>More About Me</h1>
+        <h2>What are your favorite hobbies?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE_</p>
+        <h2>What's your dream job?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+    </section>
+    <footer class="content-footer">
+        <p>Say hi to me on these social networks:</p>
+        <ul class="social">
+            <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+            <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
+            <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
+        </ul>
+    </footer>
+    ```
 
 
 Your CSS should look like this:
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
-}
+    ```css
+    .content-footer,
+    .masthead-heading,
+    .masthead-intro {
+      text-align: center;
+    }
 
-.masthead {
-    padding: 6em 0;
-    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: solid 1em #FFCF33;
-}
+    .masthead {
+        padding: 6em 0;
+        background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: solid 1em #FFCF33;
+    }
 
-.masthead-intro {
-    margin-bottom: 0.1em;
-}
+    .masthead-intro {
+        margin-bottom: 0.1em;
+    }
 
-.masthead-heading {
-    margin-top: -0.2em;
-}
+    .masthead-heading {
+        margin-top: -0.2em;
+    }
 
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
+    .content-footer,
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
 
-.social > li {
-    display: inline-block;
-}
+    .social > li {
+        display: inline-block;
+    }
+    ```
 
 ##Upgrade your font
 
@@ -640,12 +657,15 @@ Add Google Fonts to Codepen
 
 Once you've completed that, change the font of the entire document to Open Sans. At the very top of the CSS page add:
 
-body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
+    ```css
+    body {
+        /* Typography Declarations */
+        color: #222222;
+        font-size: 1em;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    ```
+
 Now, double-check that the font used across the entire page changes. If it did, you've successfully linked some Google Web Fonts.
 
 Remember:
@@ -657,20 +677,23 @@ Notice the comma-delimited font names for the font-family property. This is know
 
 6) Next, add some typographic styling to the classes in your header section.
 
-.masthead-intro {
-    margin-bottom: 0.1em;
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
+    ```css
+    .masthead-intro {
+        margin-bottom: 0.1em;
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 2em;
+    }
 
-.masthead-heading {
-    margin-top: -0.2em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
+    .masthead-heading {
+        margin-top: -0.2em;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: bold;
+        font-size: 6em;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    ```
+
 There's a couple of new properties here as well: letter-spacing, font-weight, font-style, and text-transform.
 
 Here are items to notice about what you've added to your CSS:
@@ -679,97 +702,106 @@ letter-spacing: Defines the tracking between subsequent letters in words. A nega
 font-weight: Defines the weight of the font. Choices include bold, bolder, light, as well as numerical values that are defined by each typeface for fine-grained control.
 text-transform: Controls special features about text display. In this case, it's used to make all letters uppercase.
 7) Now, style the paragraphs in each of your sections.
+    
+    ```css
+    .introduction > p,
+    .location > p,
+    .content-footer > p {
+        /* Typography Declarations */
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+    ```
 
-.introduction > p,
-.location > p,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-8) Finally, style your questions.
+    8) Finally, style your questions.
 
-.questions-section > h2 {
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-Your final CSS should look like this (Notice that a few CSS comments have been added. These comments will not affect the code. They allow you to clearly see the additions.):
+    ```css
+    .questions-section > h2 {
+        /* Typography Declarations */
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    ```
 
-body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
+    Your final CSS should look like this (Notice that a few CSS comments have been added. These comments will not affect the code. They allow you to clearly see the additions.):
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
-}
+    ```css
+    body {
+        /* Typography Declarations */
+        color: #222222;
+        font-size: 1em;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    }
 
-.masthead {
-    padding: 6em 0;
-    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: solid 1em #FFCF33;
-}
+    .content-footer,
+    .masthead-heading,
+    .masthead-intro {
+      text-align: center;
+    }
 
-.masthead-intro {
-    /* Layout Declarations */
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
+    .masthead {
+        padding: 6em 0;
+        background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: solid 1em #FFCF33;
+    }
 
-.masthead-heading {
-    /* Layout Declarations */
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
+    .masthead-intro {
+        /* Layout Declarations */
+        margin-bottom: 0.1em;
+        /* Typography Declarations */
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 2em;
+    }
 
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
+    .masthead-heading {
+        /* Layout Declarations */
+        margin-top: -0.2em;
+        /* Typography Declarations */
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: bold;
+        font-size: 6em;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
 
-.social > li {
-    display: inline-block;
-}
+    .content-footer,
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
 
-.introduction-section > p,
-.location-section > p,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
+    .social > li {
+        display: inline-block;
+    }
 
-.questions-section > h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
-}
+    .introduction-section > p,
+    .location-section > p,
+    .content-footer > p {
+        /* Typography Declarations */
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
 
-section > h1 {
-    margin-top: 2em;
-}
+    .questions-section > h2 {
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        /* Layout */
+        margin: 2em 0 1em 0;
+    }
+
+    section > h1 {
+        margin-top: 2em;
+    }
+    ```
+
 In the next lesson, you will spruce things up.
 
 ##Add extra style to your page
