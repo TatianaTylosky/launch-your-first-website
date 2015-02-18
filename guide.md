@@ -2,39 +2,54 @@
 
 ##Welcome!
 
-###Your mission if you choose to accept it
+###Your mission:
 
-You're going to build and **launch live on the interwebs** your own amaze website like [this]() or [this]()! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
-
-Your final product will be your own personal website that you can show off to your friends or even companies who you apply to.
+You're going to build and **launch live on the interwebs** your own amazing website like [this]() or [this]()! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
 
 Here is an example:
 ![](images/brendon.png)
+
+###Guide Philosophy
+
+This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something is the best way there is. We also think everything should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to make everything as clear as possible.
+
+###What do I need?
+
+Yourself, a computer, and the internet. In this tutorial, we'll start from the very beginning. You don't need to know anything about HTML and CSS or anything about code to start. So take a deep breath, you've got this.
 
 ###Why learn HTML/CSS?
 
 Because this stuff is important. Whether you're a business person formatting your emails, an aspiring web designer wanting to get your feet wet, or just someone who is interested and hasn't tried any sort of coding, scripting, or programming before, HTML and CSS are an essential part of your learning curve.
 
-###Guide Philosophy
 
-This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something is the best. We also think everything should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to make everything as clear as possible.
 
-###What do I need?
 
-Yourself, a computer, and the internet. In this tutorial, we'll start from the very beginning. You don't need to know anything about HTML and CSS or anything about code to start so take a deep breath. You've got this.
+
+
+
+
+
+
+
+
+
+
 
 ##Setup and test run
 
-Since a website is just a file, let's start by creating a file. In order to create a file we need a text editor.
+Overview: 
+Let's start by creating a HTML file and then opening it using a web browser.
 
-###Steps
+Steps:
+1) Create a folder where you are going to save your website's files such as "My Website".
 
-1) Download Sublime Text: Sublime Text is a text editor (like Microsoft Word or Google Docs) made for programmers. It can be downloaded [here](http://www.sublimetext.com/3). Download and open it. The initial page should look like this:
+2) Download Sublime [here](http://www.sublimetext.com/3) and open it (it's free!). The initial page should look like this:
 
   ![](images/sublime.png)
 
+######Sublime, a text editor made for programmers. In the same way you use Word to write essays, you use Sublime to write code.
 
-2) Do a test run: In this blank file type out the following code and save the file as "index.html" in a folder called "my website".
+3) In this blank file type out the following code. Next, save the file as "index.html" in the folder you just created.
 
 ```html
   <!doctype html>
@@ -52,60 +67,61 @@ Since a website is just a file, let's start by creating a file. In order to crea
 
 GIF HERE
 
-3) Look at your file in an internet browser: Open your "index.html" file using your internet browser. On most browsers you do this by selecting Using file --> open file. Your browser should display the text "I can has code?!"
+4) Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
 GIF HERE
 
-4) [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.**
+5) [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.** 
 
-###What did you just do?
+######At the end of each section we'll go into detail explaining what you just did in the Theory sections.
 
-So, what are we looking at here? HTML, short for HyperText Markup Language, consists of these things called tags, which are words written between < and > characters, like <sometag>. All tags (with just a few exceptions that we'll talk about later) have a matching closing tag, which has the same name as the opening tag, except that it contains / after the first <, like </sometag>.
+Theory:
+HTML, short for HyperText Markup Language, consists of these things called tags, which are words written between < and > characters, like <sometag>. There are normally matching opening and closing tags such as <head> and </head>. You can also put tags inside other tags (like we did with the <title> tags inside the <head> tags). This is called nesting elements. In this case, we would say that the <head> contains the <title>. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as <title> is indented further than <head>).
 
-For example, <html> is one tag and the closing tag for it is </html>, same with <head> and </head> and <body> and </body>, and so on. You get it. The opening and closing tags together are an element (which also includes everything written in it). For example, <title>My Website</title> is one element. The text inside an element, in the title case, My Website, is called the content of an element.
+```html
+  <!doctype html>
+  <html>
+    <head>
+        <title>
+            My Website
+        </title>
+    </head>
+    <body>
+        I can haz code?!  
+    </body>
+  </html>
+```
 
-So, if you look at our example, you can also put tags inside other tags (like we did with the <title> tags inside the <head> tags). This is called nesting elements. In this case, we would say that the <head> contains the <title>. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as <title> is indented further than <head>).
+Every HTML document and website has to have the special tag <!doctype html> and it tells the browser what language we're using. This is one of those special tags I mentioned that doesn't need a closing tag. Everything in the website is contained by the <html> tag, and the last line of your entire document will always be </html>. Inside <html>, there are two elements: <head> and <body>. Contained in <head></head>, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have <title>. The content of <title> will be used for the name of the tab of the browser, and also by search engines. On the other side of the planet, we have <body></body>. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
 
-You'll notice that the first line has <!doctype html>. Every HTML document and website has to have this special tag, as it tells the browser what language we're using. This is one of those special tags I mentioned that doesn't need a closing tag.
 
-On the second line, you can see a <html> tag. Everything in the website is contained by this tag, and the last line of your entire document will always be </html>.
 
-Inside <html>, there are two elements: <head>and <body>. Contained in <head></head>, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have <title>. The content of <title> will be used for the name of the tab of the browser, and also by search engines.
 
-On the other side of the planet, we have <body></body>. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
 
-##Wireframe your personal site
 
-You are going to create a "wireframe". A wireframe is a sketch of your design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##Add Sections
+
+Let's create the different sections of your website: header, section, and footer.
 
 ###Steps
 
-1) Sketch up your site: In the same way an architect draws a plan of a house before building, make sketch of what you're looking to build before you start coding. Here is an example:
-
-![](images/wireframeannotated.png)
-
-Keep things simple for your first site. Remember that you can always go back and update with a new version! We've got plenty of examples to give you some inspiration. Try not to spend too much time making this perfect, the goal is to have something you can refer to and work off of when you code up your page.
-
-Examples:
-- list them here
-
-2) Write your bio: This will probably take some time, but write the text you would like to display on your site.
-
-Note: It's not a bad idea to write this in Sublime Text and save as a ".txt" file. This will easily allow you to copy and paste the answers into your html file later.
-
-###What did you just do?
-
-Wireframing is an important technique for web development and it will help you organize your thoughts before jumping into codig up your page.
-
-##Structure your HTML
-
-Let's create the different sections your sketched in your wireframe.
-
-###Steps
-
-1) Add new header, section, and footer tags inside of your <body></body> tags.
-
-Your first section is a header, so use the <header> tags to create this section. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
+1) Add new header, section, and footer tags inside of your <body></body> tags. Your first section is a header, so use the <header> tags to create this section. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
 
 
 ```html
@@ -134,8 +150,6 @@ Your first section is a header, so use the <header> tags to create this section.
 ###What did you just do?
 
 You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - header, section, and footer. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
-
-In the past, you might have seen similar tutorials use the div tag for dividing the page. While the div tag does mean division and isn't technically wrong, it has no semantic meaning. Keep an eye out for more specific elements than just div in the future. There's sometimes a better HTML5 element to represent content than a plain div. The same can be said for using <tables> tags to create column sections -- it's bad practice.
 
 ##Header
 
@@ -179,8 +193,7 @@ Add the following code to yours:
 </footer>
 ```
 
-***Theory:
-The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.***
+###### The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
 3) Style your masthead text: Now in our CSS, you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
@@ -209,12 +222,9 @@ The header tag now has a "class" attribute equal to "masthead". The word "masthe
 
 6) Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
 
-***Theory:
-Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin.
+###### Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin. Increasing padding increases the distance between your element and its border. Increasing a margin adds more space outside of your element's border. See Box Model image below:
 
 ![](images/boxmodel.png)
-
-Increasing padding increases the distance between your element and its border. Increasing a margin adds more space outside of your element's border.***
 
 7) With this knowledge, add this to your CSS:
 
@@ -232,15 +242,16 @@ Increasing padding increases the distance between your element and its border. I
 }
 ```
 
-***Theory:
-By using padding for the "masthead" class you're making that class bigger. By using margin for the masthead-intro and "masthead-heading" class you're pushing other elements away from it.
+###### By using padding for the "masthead" class you're making that class bigger. By using margin for the masthead-intro and "masthead-heading" class you're pushing other elements away from it.
 
-Padding shorthand: In the "masthead" class you can indicate that there's padding: 6em 0;. The first number value (6em) represents padding top and bottom while the second number value (0) represents padding right and left.This is written in short hand. You could have instead wrote, padding-top: 6em, padding-bottom: 6em, padding-left: 0em, padding-right: 0em. There are several shorthand CSS properties that can be referenced here .
-Using em: Ems are a unit of measure that isn't fixed like inches or centimeters. A centimenter is the same width anywhere in the world, ems are relative to the current font size. What's the current font size? That's dependent on your computer's browser. For most computer browsers, an "em" is equal to 16px. It's best practice to use ems in web development because it's common for content to be viewed on several different devices -- cell phones, tablets, desktop computers, even smart watches. Using ems makes it easier to adapt the content for each screen.
-Negative measurements: You're using a negative margin to bring two elements closer together than the standard margin given.
+######Padding shorthand: In the "masthead" class you can indicate that there's padding: 6em 0;. The first number value (6em) represents padding top and bottom while the second number value (0) represents padding right and left.This is written in short hand. You could have instead wrote, padding-top: 6em, padding-bottom: 6em, padding-left: 0em, padding-right: 0em. There are several shorthand CSS properties that can be referenced here .
+
+######Using em: Ems are a unit of measure that isn't fixed like inches or centimeters. A centimenter is the same width anywhere in the world, ems are relative to the current font size. What's the current font size? That's dependent on your computer's browser. For most computer browsers, an "em" is equal to 16px. It's best practice to use ems in web development because it's common for content to be viewed on several different devices -- cell phones, tablets, desktop computers, even smart watches. Using ems makes it easier to adapt the content for each screen.
+
+######Negative measurements: You're using a negative margin to bring two elements closer together than the standard margin given.
 
 
-The quality of your cover image greatly impacts the quality of your site. Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer.***
+######The quality of your cover image greatly impacts the quality of your site. Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer.
 
 8) To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
 
@@ -250,9 +261,13 @@ The quality of your cover image greatly impacts the quality of your site. Check 
 }
 ```
 
-There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
+######There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
 
-The example also has a little strip of color at the very top of the masthead cover image. Use the border-top property in your CSS to accomplish the same effect.
+######The example also has a little strip of color at the very top of the masthead cover image. Use the border-top property in your CSS to accomplish the same effect.
+
+
+
+
 
 ##Middle
 
@@ -755,7 +770,7 @@ border-radius: http://css-tricks.com/almanac/properties/b/border-radius/
 
 ##Get your site live using Github pages
 
-You've worked hard to get your site running locally. Now let's share it with the world! 
+You've worked hard to get your site running locally. Now let's share it with the world!
 
 
 ##Conclusion
