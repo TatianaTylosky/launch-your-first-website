@@ -41,39 +41,40 @@ Overview:
 Let's start by creating a HTML file and then opening it using a web browser.
 
 Steps:
-1) Create a folder where you are going to save your website's files such as "My Website".
 
-2) Download Sublime [here](http://www.sublimetext.com/3) and open it (it's free!). The initial page should look like this:
+1. Create a folder where you are going to save your website's files such as "My Website".
+
+2. Download Sublime [here](http://www.sublimetext.com/3) and open it (it's free!). The initial page should look like this:
 
   ![](images/sublime.png)
 
-######Sublime, a text editor made for programmers. In the same way you use Word to write essays, you use Sublime to write code.
+    ######Sublime, a text editor made for programmers. In the same way you use Word to write essays, you use Sublime to write code.
 
-3) In this blank file type out the following code. Next, save the file as "index.html" in the folder you just created.
+3. In this blank file type out the following code. Next, save the file as "index.html" in the folder you just created.
 
-```html
-  <!doctype html>
-  <html>
-    <head>
-        <title>
-            My Website
-        </title>
-    </head>
-    <body>
-        I can haz code?!  
-    </body>
-  </html>
-```
+    ```html
+      <!doctype html>
+      <html>
+        <head>
+            <title>
+                My Website
+            </title>
+        </head>
+        <body>
+            I can haz code?!  
+        </body>
+      </html>
+    ```
 
-GIF HERE
+    GIF HERE
 
-4) Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
+4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
-GIF HERE
+    GIF HERE
 
-5) [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.** 
+5. [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.** 
 
-######At the end of each section we'll go into detail explaining what you just did in the Theory sections.
+    ######At the end of each section we'll go into detail explaining what you just did in the Theory sections.
 
 Theory:
 HTML, short for HyperText Markup Language, consists of these things called tags, which are words written between < and > characters, like <sometag>. There are normally matching opening and closing tags such as <head> and </head>. You can also put tags inside other tags (like we did with the <title> tags inside the <head> tags). This is called nesting elements. In this case, we would say that the <head> contains the <title>. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as <title> is indented further than <head>).
