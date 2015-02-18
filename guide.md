@@ -305,6 +305,7 @@ These observations will direct how you code these sections.
 Coding
 Go ahead and add the raw content into the HTML using <h1> tags for your prominent headers, <h2> tags for your secondary headers, and <p> tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
 
+```html
 <section>
     <h1>Introduction</h1>
     <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
@@ -325,8 +326,11 @@ Go ahead and add the raw content into the HTML using <h1> tags for your prominen
     <h2>Another question?</h2>
     <p>_INSERT_YOUR_ANSWER_HERE</p>
 </section>
+```
+
 Add dedicated CSS class attributes to each section. For section one add class="introduction-section". For section two add class="location-section". For section three add class="questions-section". Your code should now look like this:
 
+```html
 <section class="introduction-section">
     <h1>Introduction</h1>
     <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
@@ -347,6 +351,7 @@ Add dedicated CSS class attributes to each section. For section one add class="i
     <h2>Another question?</h2>
     <p>_INSERT_YOUR_ANSWER_HERE</p>
 </section>
+```
 
 Theory: When to add classes
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
@@ -365,6 +370,7 @@ All of this content is centered in the middle of the page but the text is aligne
 Coding
 Now that all of your HTML is marked up, it's time to adjust the CSS. All of the sections should be centered, while the text within each section is left-aligned. This is best way to center a section:
 
+```css
 .introduction-section,
 .location-section,
 .questions-section {
@@ -372,6 +378,8 @@ Now that all of your HTML is marked up, it's time to adjust the CSS. All of the 
     margin-left: auto;
     margin-right: auto;
 }
+```
+
 The above code does the following to your content:
 
 Sets a fixed "max-width" property.
@@ -381,6 +389,7 @@ Remember this strategy for centering block elements: By setting the max-width pr
 
 You still need to add some margin to the top of each middle section with margin-top:2em;. Your CSS should now look like this:
 
+```css
 .masthead-heading,
 .masthead-intro {
     text-align: center;
@@ -410,6 +419,8 @@ You still need to add some margin to the top of each middle section with margin-
     margin-right: auto;
     margin-top: 2em;
 }
+```
+
 Perfect. Now it's time to create the footer.
 
 
@@ -432,6 +443,7 @@ footeranalysis.png
 Coding
 Back in your HTML, add the following class attributes to your footer tags and content. A few tags that you'll use include: <ul> which stands for unordered list, <li> which stands for list items within the unordered list, and <a> tag with an href attribute which is used for linked text. Your code should look like this:
 
+```html
 <footer class="content-footer">
     <p>Say hi to me on these social networks:</p>
     <ul class="social">
@@ -440,8 +452,11 @@ Back in your HTML, add the following class attributes to your footer tags and co
         <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
     </ul>
 </footer>
+```
+
 Your entire HTML page should now look like this:
 
+```html
 <header class="masthead">  
     <p class="masthead-intro">Hi, I'm</p>
     <h1 class="masthead-heading">Name!</h1> 
@@ -475,6 +490,8 @@ Your entire HTML page should now look like this:
     </ul>
     <p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
 </footer>
+```
+
 Make sure to take the time to really understand these changes:
 
 You've given the entire footer the class "content-footer".
