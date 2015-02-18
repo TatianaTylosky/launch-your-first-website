@@ -499,17 +499,17 @@ The text, "Say hi to me on these social networks:", is wrapped in paragraph tags
 The three links to GitHub, Twitter, and Google+ are within an unordered list tag (<ul>) with the class, "social", and each link is a list item (<li>) with links in them (<a>).
 In CSS, you're now able to center the section. Add the ".content-footer" class to the code that centers your three middle sections. Your code should look like this:
 
-    ```css
-    .content-footer,
-    .introduction-section,
-    .location-section,
-    .questions-section {
-        max-width: 38em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
+```css
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
     }
-    ```
+```
 
 You're now able to center the footer text. Add the ".content-footer" class to the same selector used for text-aligning code in your header. Your code should look like this:
 
