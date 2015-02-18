@@ -121,7 +121,7 @@ Let's create the different parts of your website: header, sections, and footer.
 
 ###Steps
 
-1. Add new header, section, and footer tags inside of your <code><body></body></code> tags. The first is the header, so use the <header> tags. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
+1. Add new header, section, and footer tags inside of your <pre><body></body></pre> tags. The first is the header, so use the <header> tags. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
 
 
     ```html
