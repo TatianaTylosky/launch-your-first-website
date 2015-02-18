@@ -11,7 +11,7 @@ Here is an example:
 
 ###Guide Philosophy
 
-This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something is the best way there is. We also think everything should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to make everything as clear as possible.
+This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something is the best way there is. We also think everything should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to make everything as clear as possible. At the end of each Steps section we'll go into detail explaining what you just did in the Theory sections.
 
 ###What do I need?
 
@@ -38,9 +38,9 @@ Because this stuff is important. Whether you're a business person formatting you
 ##Setup and test run
 
 Overview: 
-Let's start by creating a HTML file and then opening it using a web browser.
+Let's start by creating a HTML file and opening it using a web browser.
 
-Steps:
+###Steps:
 
 1. Create a folder where you are going to save your website's files such as "My Website".
 
@@ -48,7 +48,7 @@ Steps:
 
   ![](images/sublime.png)
 
-    ######Sublime, a text editor made for programmers. In the same way you use Word to write essays, you use Sublime to write code.
+    Sublime is a text editor made for programmers. In the same way you use Word to write essays, you use Sublime to write code.
 
 3. In this blank file type out the following code. Next, save the file as "index.html" in the folder you just created.
 
@@ -74,10 +74,9 @@ Steps:
 
 5. [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.** 
 
-    ######At the end of each section we'll go into detail explaining what you just did in the Theory sections.
 
-Theory:
-HTML, short for HyperText Markup Language, consists of these things called tags, which are words written between < and > characters, like <sometag>. There are normally matching opening and closing tags such as <head> and </head>. You can also put tags inside other tags (like we did with the <title> tags inside the <head> tags). This is called nesting elements. In this case, we would say that the <head> contains the <title>. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as <title> is indented further than <head>).
+###Theory:
+HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like <sometag>. There are normally matching opening and closing tags such as <head> and </head>. You can also put tags inside other tags (like we did with the <title> tags inside the <head> tags). This is called nesting elements. In this case, we would say that the <head> contains the <title>. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as <title> is indented further than <head>).
 
 ```html
   <!doctype html>
@@ -118,130 +117,145 @@ Every HTML document and website has to have the special tag <!doctype html> and 
 
 ##Add Sections
 
-Let's create the different sections of your website: header, section, and footer.
+Let's create the different parts of your website: header, sections, and footer.
 
 ###Steps
 
-1) Add new header, section, and footer tags inside of your <body></body> tags. Your first section is a header, so use the <header> tags to create this section. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
+1. Add new header, section, and footer tags inside of your <body></body> tags. The first is the header, so use the <header> tags. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use <section> tags for each of them. Lastly, use a <footer> tag for your footer. Your structure should now look like this:
 
 
-```html
-<!doctype html>
-<html>
-    <head>
-        <title>
-            My Website
-        </title>
-    </head>
-    <body>
-        <header>   
-        </header>
-        <section>  
-        </section>
-        <section>  
-        </section>
-        <section>  
-        </section>
-        <footer>
-        </footer>
-    </body>
-</html>
-```
+    ```html
+    <!doctype html>
+    <html>
+        <head>
+            <title>
+                My Website
+            </title>
+        </head>
+        <body>
+            <header>   
+            </header>
+            <section>  
+            </section>
+            <section>  
+            </section>
+            <section>  
+            </section>
+            <footer>
+            </footer>
+        </body>
+    </html>
+    ```
 
-###What did you just do?
+###Theory:
 
 You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - header, section, and footer. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
+
+
+
+
+
+
+
+
+
+
+
 
 ##Header
 
 Let's add the header! When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Brendon!", and 3) a background image. Notice that in the header the small text and large text are centered both horizontally and vertically.
 
+![](images/headers.png)
+
 ###Steps
 
-1) Start by adding the text content to your HTML:
+1. Start by adding the text content to your HTML:
 
-```html
-<header>  
-    <p>Hi, I'm</p>
-    <h1>Name!</h1> 
-</header>
-<section>  
-</section>
-<section>  
-</section>
-<section>  
-</section>
-<footer>
-</footer>
-```
+    ```html
+    <header>  
+        <p>Hi, I'm</p>
+        <h1>Name!</h1> 
+    </header>
+    <section>  
+    </section>
+    <section>  
+    </section>
+    <section>  
+    </section>
+    <footer>
+    </footer>
+    ```
 
-2) Center your header text: Now to get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
+2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
 
-Add the following code to yours:
+    Add the following code to yours:
 
-```html
-<header class="masthead">  
-    <p class="masthead-intro">Hi, I'm</p>
-    <h1 class="masthead-heading">Name!</h1> 
-</header>
-<section>  
-</section>
-<section>  
-</section>
-<section>  
-</section>
-<footer>
-</footer>
-```
+    ```html
+    <header class="masthead">  
+        <p class="masthead-intro">Hi, I'm</p>
+        <h1 class="masthead-heading">Name!</h1> 
+    </header>
+    <section>  
+    </section>
+    <section>  
+    </section>
+    <section>  
+    </section>
+    <footer>
+    </footer>
+    ```
 
-###### The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
+    The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
-3) Style your masthead text: Now in our CSS, you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
+3. Create a new file called "style.css".
 
-```css
-.masthead-intro {
+4. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
-}
-```
+    ```css
+    .masthead-intro {
 
-4) This selects the masthead-intro class. Now in between the curly braces let's type the following:
+    }
+    ```
 
-```css
-.masthead-intro {
-    text-align: center;
-}
-```
+5. This selects the masthead-intro class. Now in between the curly braces let's type the following:
 
-5) The "masthead-heading" text is also text-aligned center. You could copy and paste the same code above but replace .masthead with .masthead-heading or you could just add the ".masthead-heading" above the ".masthead-intro" selector with a comma like this:
+    ```css
+    .masthead-intro {
+        text-align: center;
+    }
+    ```
 
-```css
-.masthead-heading,
-.masthead-intro {
-    text-align: center;
-}
-```
+6. The "masthead-heading" text is also text-aligned center. You could copy and paste the same code above but replace .masthead with .masthead-heading or you could just add the ".masthead-heading" above the ".masthead-intro" selector with a comma like this:
 
-6) Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
+    ```css
+    .masthead-heading,
+    .masthead-intro {
+        text-align: center;
+    }
+    ```
+
+7. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
 
 ###### Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin. Increasing padding increases the distance between your element and its border. Increasing a margin adds more space outside of your element's border. See Box Model image below:
 
 ![](images/boxmodel.png)
 
-7) With this knowledge, add this to your CSS:
+8. With this knowledge, add this to your CSS:
 
-```css
-.masthead {
-    padding: 6em 0;
-}
+    ```css
+    .masthead {
+        padding: 6em 0;
+    }
 
-.masthead-intro {
-    margin-bottom: 0.1em;
-}
+    .masthead-intro {
+        margin-bottom: 0.1em;
+    }
 
-.masthead-heading {
-    margin-top: -0.2em;
-}
-```
+    .masthead-heading {
+        margin-top: -0.2em;
+    }
+    ```
 
 ###### By using padding for the "masthead" class you're making that class bigger. By using margin for the masthead-intro and "masthead-heading" class you're pushing other elements away from it.
 
@@ -254,17 +268,19 @@ Add the following code to yours:
 
 ######The quality of your cover image greatly impacts the quality of your site. Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer.
 
-8) To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
+9. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
 
-```css
-.masthead {
-  background-image: url('http://i.imgur.com/dCgHi.jpg');
-}
-```
+    ```css
+    .masthead {
+      background-image: url('http://i.imgur.com/dCgHi.jpg');
+    }
+    ```
 
 ######There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
 
 ######The example also has a little strip of color at the very top of the masthead cover image. Use the border-top property in your CSS to accomplish the same effect.
+
+
 
 
 
@@ -331,6 +347,7 @@ Add dedicated CSS class attributes to each section. For section one add class="i
     <h2>Another question?</h2>
     <p>_INSERT_YOUR_ANSWER_HERE</p>
 </section>
+
 Theory: When to add classes
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
 
@@ -394,6 +411,15 @@ You still need to add some margin to the top of each middle section with margin-
     margin-top: 2em;
 }
 Perfect. Now it's time to create the footer.
+
+
+
+
+
+
+
+
+
 
 ##Footer
 
@@ -492,6 +518,9 @@ So far, you've centered things using two different techniques: 1) text-align: ce
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
 
+
+
+
 ##Positioning and Layout
 
 Your site is almost complete. The HTML is well organized and your CSS has positioned all of your elements to match your design's layout. You're well on your way. Before moving onto adjusting typography, recap a few important points from this assignment.
@@ -544,6 +573,8 @@ Your HTML should look like this:
         <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
     </ul>
 </footer>
+
+
 Your CSS should look like this:
 
 .content-footer,
@@ -741,25 +772,23 @@ section > h1 {
 }
 In the next lesson, you will spruce things up.
 
-##Style your page
+##Add extra style to your page
 
-Finish styling your 'About Me' Page. Below you will find some hints on how to get started and effective techniques for creating well-designed pages. What comes next is up to you.
-
-Once you've picked out an appropriate cover image, you can use a popular design tool called Adobe Kuler to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
+Finish styling your 'About Me' Page. Once you've picked out an appropriate cover image, you can use a popular design tool called Adobe Kuler to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
 
 Here's an example for the background-color property that'll turn your footer red:
 
-<code>
-.content-footer {
-  /* Red, Green, Blue: #RRGGBB */
-  background-color: #FF0000;
-}
-If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
+    ```css
+    .content-footer {
+      /* Red, Green, Blue: #RRGGBB */
+      background-color: #FF0000;
+    }
+    If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
 
-h1 {
-  color: #FF0000;
-}
-</code>
+    h1 {
+      color: #FF0000;
+    }
+    ```
 
 Other CSS Effects
 Finally, you can add a ton of awesome visual effects with CSS. Here's a list of a few cool ones with links to tutorials if you want to try them out.
