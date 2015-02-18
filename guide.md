@@ -423,6 +423,7 @@ Back in your HTML, add the following class attributes to your footer tags and co
         <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
         <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
     </ul>
+    <p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
 </footer>
 ```
 
@@ -485,13 +486,13 @@ In CSS, you're now able to center the section. Add the ".content-footer" class t
 
 You're now able to center the footer text. Add the ".content-footer" class to the same selector used for text-aligning code in your header. Your code should look like this:
 
-    ```css
-    .masthead-intro,
-    .masthead-heading,
-    .content-footer {
-        text-align: center;
-    }
-    ```
+```css
+.masthead-intro,
+.masthead-heading,
+.content-footer {
+    text-align: center;
+}
+```
 
 Next, get all of the links in your list on the same line. To do this, you need to use the "display" property and the "inline-block" value. Your CSS should look like this:
 
@@ -502,12 +503,6 @@ Next, get all of the links in your list on the same line. To do this, you need t
 ```
 
 Use a specific selector here. .social > li selects all of the `<li>`s tags within the .social class. The ">" selector means that only li elements that are direct children of the .social class will be displayed as inline-blocks.
-
-Your footer needs a paragraph linking to the image source:
-
-```html
-<p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
-```
 
 In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
@@ -624,30 +619,7 @@ Your CSS should look like this:
 
 ##Upgrade your font
 
-To upgrade typography in your web projects use a web fonts service. We'll use Google Fonts for this project because it's free. 
-
-Coding
-1) Go to the [Google Fonts website](https://www.google.com/fonts/).
-
-NOTE: Don't worry if you're not a great designer or don't know a lot about typography! A good rule of thumb is to use two different typefaces per website. Check out [this page](http://hellohappy.org/beautiful-web-type/) for some great inspiration on some Google Fonts to pair together for this project(click on the font to go to the google collection). If you still don't know which ones to pick, you can use the example typefaces in the steps below.
-
-Browse Google Fonts to check out some of the typefaces offered.
-
-2) Search for "Open Sans" in the upper left corner of the page.
-
-3) Click the "Add to Collection" button. You should see each typeface show up in the "Collection" panel at the bottom of the screen. Do the same thing for "Gentium Book Basic".
-
-Collection panel on Google Fonts
-
-4) Next click the "Use" button on the Collection panel. You'll be taken to a screen with a summary of the typefaces you're including. There will also be some numbered steps. Skip ahead to Step 3. It looks like this:
-
-Google Fonts Use Step 3
-
-5) Copy that snippet of HTML. This is a link tag and it's actually how you'll include CSS on a website that you build yourself. Let Codepen handle a lot of this work for you. Head back to Codepen and click the "Gear" icon at the top of the CSS panel. You'll see a pop out menu appear. Paste the link tag that you copied from Google Fonts into the field marked "External CSS File or Another Pen". Check out the screenshot below if you're not sure where this goes. You may need to trim your pasted content down to just the url ( http://fonts.googleapis.com/css?family=Open+Sans|Gentium+Book+Basic ).
-
-Add Google Fonts to Codepen
-
-Once you've completed that, change the font of the entire document to Open Sans. At the very top of the CSS page add:
+Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
 
     ```css
     body {
@@ -657,10 +629,6 @@ Once you've completed that, change the font of the entire document to Open Sans.
         font-family: "Open Sans", "Helvetica Neue", sans-serif;
     }
     ```
-
-Now, double-check that the font used across the entire page changes. If it did, you've successfully linked some Google Web Fonts.
-
-Remember:
 
 To style a font color, use color with a HEX code value. A HEX code is simply a 6 digit code that represents a color.
 font-size lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
