@@ -4,14 +4,16 @@
 
 ###Your mission:
 
-You're going to build and **launch live on the interwebs** your own amazing website like [this]() or [this]()! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
+You're going to build and **launch live** your own amazing "About Me" website! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
 
-Here is an example:
-![](images/brendon.png)
+Here is [the example](http://tatianatylosky.github.io/personal-website-example/) we will be referring to throughout this guide:
+![](images/tatiana.png)
 
 ###Guide Philosophy
 
-This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We think learning by actually creating something is the best way there is. We also think everything should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to make everything as clear as possible. At the end of each Steps section we'll go into detail explaining what you just did in the Theory sections.
+This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We believe the best way to learn a new skill is by creating a project of your own.
+
+We also think learning should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to help you follow along with each step. Also at the end of each section we'll go into detail explaining the theory behind what you just did.
 
 ###What do I need?
 
@@ -62,7 +64,7 @@ Steps:
 
 
 ###Theory:
-HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`).
+HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`). Now let's go over those tags that you just created.
 
 ```html
   <!doctype html>
@@ -78,32 +80,11 @@ HTML (HyperText Markup Language) consists of these things called tags, which are
   </html>
 ```
 
-Every HTML document and website has to have the special tag `<!doctype html>` and it tells the browser what language we're using. This is one of those special tags I mentioned that doesn't need a closing tag. Everything in the website is contained by the `<html>` tag, and the last line of your entire document will always be `</html>`. Inside `<html>`, there are two elements: `<head>` and `<body>`. Contained in `<head></head>`, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have `<title>`. The content of `<title>` will be used for the name of the tab of the browser, and also by search engines. On the other side of the planet, we have `<body></body>`. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Every HTML document and website has to have the special tag `<!doctype html>` because it tells the browser what language we're using. This tag is special because it does not need a closing tag. Everything in the website is contained by the `<html>` tag, and the last line of your entire document will always be `</html>`. Inside `<html>`, there are two elements: `<head>` and `<body>`. Contained in `<head></head>`, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have `<title>`. The content of `<title>` will be used for the name of the tab of the browser, and also by search engines. On the other side of the planet, we have `<body></body>`. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
 
 ##Add Sections
 
-Let's create the different parts of your website: header, sections, and footer.
+Let's create the different parts of your website: header, sections, and footer (Refer back to our [example site](http://tatianatylosky.github.io/personal-website-example/) to see what this will look like).
 
 Steps
 
@@ -128,13 +109,15 @@ Steps
     </html>
     ```
 
+Notice we took out the "I can haz code?!" for now!
+
 ###Theory:
 
-You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - header, section, and footer. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
+You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - `<header></header>`, `<section></section>`, and `<footer></footer>`. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
 
 ##Header
 
-Let's add the header! When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Brendon!", and 3) a background image. Notice that in the header the small text and large text are centered both horizontally and vertically.
+Let's add the header! When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Tati!", and 3) a background image. Notice that in the header the small text and large text are centered both horizontally and vertically.
 
 ![](images/headers.png)
 
@@ -790,9 +773,17 @@ text-shadow: http://css-tricks.com/snippets/css/css-text-shadow/
 border-radius: http://css-tricks.com/almanac/properties/b/border-radius/
 
 
-##Get your site live using Github pages
+##Challenge: Get your site live using Github pages
 
 You've worked hard to get your site running locally. Now let's share it with the world!
+
+git checkout -b gh-pages
+
+git push origin gh-pages
+
+The URL will be at:
+
+http://username.github.io/repo-name
 
 
 ##Conclusion
