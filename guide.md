@@ -109,7 +109,7 @@ Steps
     </html>
     ```
 
-Notice we took out the "I can haz code?!" for now!
+Notice we went ahead and took out the "I can haz code?!".
 
 ###Theory:
 
@@ -128,7 +128,7 @@ Steps:
     ```html
     <header>  
         <p>Hi, I'm</p>
-        <h1>Name!</h1> 
+        <h1>Your Name!</h1> 
     </header>
     <section></section>
     <section></section>
@@ -136,9 +136,9 @@ Steps:
     <footer></footer>
     ```
 
-2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute.
+2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute in your HTML.
 
-    Add the following code to yours:
+    Add the following code to index.html file:
 
     ```html
     <header class="masthead">  
@@ -153,18 +153,29 @@ Steps:
 
     The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
-3. Create a new file called "style.css" in your folder and add the following line of code to your index.html file in between the `<head></head>` tags.
+3. Create a new file called "style.css" in your folder. Add the following code to it.
 
-```html
-    <head>
-        <title>
-            My Website
-        </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-```
+    ```css
+    body {
+    background-color:red;
+    }
+    ```
+    We are temporarily making your background red so that in the next step you can tell if you've linked your css file correctly! If you want to choose a (better color)[http://www.colors.commutercreative.com/grid/] go for it.
 
-4. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
+4. Next we'll link your CSS file to your html file. Add the following line of code to your index.html file in between the `<head></head>` tags.
+
+    ```html
+        <head>
+            <title>
+                My Website
+            </title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+    ```
+
+    Save your files and refresh your browser. Your page should have a colored background! If not go over the steps one more time. One common mistake is placing your css file (style.css) in a different folder than your html file. Make sure they are in the same folder.
+
+5. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
     ```css
     .masthead-intro {
@@ -189,17 +200,14 @@ Steps:
     }
     ```
 
-7. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. The best way to visualize this is to imagine what designers call "The Box Model."
-
-###### Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin. Increasing padding increases the distance between your element and its border. Increasing a margin adds more space outside of your element's border. See Box Model image below:
-
-![](images/boxmodel.png)
-
-8. With this knowledge, add this to your CSS:
+7. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. 
 
     ```css
     .masthead {
-        padding: 6em 0;
+        padding-top: 6em;
+        padding-bottom: 6em;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .masthead-intro {
@@ -211,23 +219,15 @@ Steps:
     }
     ```
 
-###### By using padding for the "masthead" class you're making that class bigger. By using margin for the masthead-intro and "masthead-heading" class you're pushing other elements away from it.
 
-######Padding shorthand: In the "masthead" class you can indicate that there's padding: 6em 0;. The first number value (6em) represents padding top and bottom while the second number value (0) represents padding right and left.This is written in short hand. You could have instead wrote, padding-top: 6em, padding-bottom: 6em, padding-left: 0em, padding-right: 0em. There are several shorthand CSS properties that can be referenced here .
+    Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
 
-######Using em: Ems are a unit of measure that isn't fixed like inches or centimeters. A centimenter is the same width anywhere in the world, ems are relative to the current font size. What's the current font size? That's dependent on your computer's browser. For most computer browsers, an "em" is equal to 16px. It's best practice to use ems in web development because it's common for content to be viewed on several different devices -- cell phones, tablets, desktop computers, even smart watches. Using ems makes it easier to adapt the content for each screen.
-
-######Negative measurements: You're using a negative margin to bring two elements closer together than the standard margin given.
-
-
-######The quality of your cover image greatly impacts the quality of your site. Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer.
-
-9. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. You'll need to have your image accessible to the internet for it to work on Codepen, so you can upload it to any image hosting service that you might be familiar with, including Photobucket , imgur , or tinypic . Then, just include the image's url in the background-image property to the .masthead class:
+9. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. Include the image's url in the background-image property to the .masthead class:
 
     ```css
     .masthead {
         padding: 6em 0;
-        background-image: url('http://i.imgur.com/dCgHi.jpg');
+        background-image: url('http://photo.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         border-top: solid 10px white;
@@ -236,14 +236,17 @@ Steps:
 
 10. Refresh index.html file and check out your page!
 
-######There are two other important properties to go with background-image: background-size and background-repeat. You can use background-size to control how the background stretches to fill the element. One commonly used setting for background-size is cover. This will make the element stretch to completely cover the specified element, but preserve its aspect ratio. It's one of the best settings to use for a large background image like a cover image. Still having trouble getting the header just right? In the next assignment an example solution is provided.
+Theory:
 
-######The example also has a little strip of color at the very top of the masthead cover image. Use the border-top property in your CSS to accomplish the same effect.
+Box Model:
 
+![](images/boxmodel.png)
 
+Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin. Increasing padding increases the distance between your element and its border. Increasing  a margin adds more space outside of your element's border.
 
+Using em: Ems are a unit of measure that isn't fixed like inches or centimeters. A centimenter is the same width anywhere in the world, ems are relative to the current font size. What's the current font size? That's dependent on your computer's browser. For most computer browsers, an "em" is equal to 16px. It's best practice to use ems in web development because it's common for content to be viewed on several different devices -- cell phones, tablets, desktop computers, even smart watches. Using ems makes it easier to adapt the content for each screen.
 
-
+Negative measurements: You're using a negative margin to bring two elements closer together than the standard margin given.
 
 
 ##Middle
@@ -495,7 +498,6 @@ In your CSS, style this tiny paragraph so that the text is white. Your CSS shoul
 }
 ```
 
-
 Theory: Centering things
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring margin-left: auto;, margin-right:auto;. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
@@ -524,94 +526,94 @@ Before moving to the next section, Typography, let's make sure that our HTML is 
 
 Your HTML should look like this:
 
-    ```html
-    <header class="masthead">  
-        <p class="masthead-intro">Hi, I'm</p>
-        <h1 class="masthead-heading">Name!</h1> 
-    </header>
-    <section class="introduction-section">
-        <h1>Introduction</h1>
-        <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
-        <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
-    </section>
-    <section class="location-section">
-        <h1>Where I'm From</h1>
-        <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
-    </section>
-    <section class="questions-section">
-        <h1>More About Me</h1>
-        <h2>What are your favorite hobbies?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE_</p>
-        <h2>What's your dream job?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE</p>
-        <h2>Another question?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE</p>
-        <h2>Another question?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE</p>
-    </section>
-    <footer class="content-footer">
-        <p>Say hi to me on these social networks:</p>
-        <ul class="social">
-            <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
-            <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
-            <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
-        </ul>
-    </footer>
-    ```
+```html
+<header class="masthead">  
+    <p class="masthead-intro">Hi, I'm</p>
+    <h1 class="masthead-heading">Name!</h1> 
+</header>
+<section class="introduction-section">
+    <h1>Introduction</h1>
+    <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
+    <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
+</section>
+<section class="location-section">
+    <h1>Where I'm From</h1>
+    <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
+</section>
+<section class="questions-section">
+    <h1>More About Me</h1>
+    <h2>What are your favorite hobbies?</h2>
+    <p>_INSERT_YOUR_ANSWER_HERE_</p>
+    <h2>What's your dream job?</h2>
+    <p>_INSERT_YOUR_ANSWER_HERE</p>
+    <h2>Another question?</h2>
+    <p>_INSERT_YOUR_ANSWER_HERE</p>
+    <h2>Another question?</h2>
+    <p>_INSERT_YOUR_ANSWER_HERE</p>
+</section>
+<footer class="content-footer">
+    <p>Say hi to me on these social networks:</p>
+    <ul class="social">
+        <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+        <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
+        <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
+    </ul>
+</footer>
+```
 
 
 Your CSS should look like this:
 
-    ```css
-    .content-footer,
-    .masthead-heading,
-    .masthead-intro {
-      text-align: center;
-    }
+```css
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
 
-    .masthead {
-        padding: 6em 0;
-        background-image: url('http://i.imgur.com/lvXbgcg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-top: solid 1em #FFCF33;
-    }
+.masthead {
+    padding: 6em 0;
+    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1em #FFCF33;
+}
 
-    .masthead-intro {
-        margin-bottom: 0.1em;
-    }
+.masthead-intro {
+    margin-bottom: 0.1em;
+}
 
-    .masthead-heading {
-        margin-top: -0.2em;
-    }
+.masthead-heading {
+    margin-top: -0.2em;
+}
 
-    .content-footer,
-    .introduction-section,
-    .location-section,
-    .questions-section {
-        max-width: 38em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-    }
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
 
-    .social > li {
-        display: inline-block;
-    }
-    ```
+.social > li {
+    display: inline-block;
+}
+```
 
 ##Upgrade your font
 
 Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
 
-    ```css
-    body {
-        /* Typography Declarations */
-        color: #222222;
-        font-size: 1em;
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    ```
+```css
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+```
 
 To style a font color, use color with a HEX code value. A HEX code is simply a 6 digit code that represents a color.
 font-size lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
@@ -620,22 +622,22 @@ Notice the comma-delimited font names for the font-family property. This is know
 
 6) Next, add some typographic styling to the classes in your header section.
 
-    ```css
-    .masthead-intro {
-        margin-bottom: 0.1em;
-        font-family: "Gentium Book Basic", Georgia, serif;
-        font-size: 2em;
-    }
+```css
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
 
-    .masthead-heading {
-        margin-top: -0.2em;
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
-        font-weight: bold;
-        font-size: 6em;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-    }
-    ```
+.masthead-heading {
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+```
 
 There's a couple of new properties here as well: letter-spacing, font-weight, font-style, and text-transform.
 
@@ -646,104 +648,104 @@ font-weight: Defines the weight of the font. Choices include bold, bolder, light
 text-transform: Controls special features about text display. In this case, it's used to make all letters uppercase.
 7) Now, style the paragraphs in each of your sections.
     
-    ```css
-    .introduction > p,
-    .location > p,
-    .content-footer > p {
-        /* Typography Declarations */
-        font-weight: 300;
-        letter-spacing: 0.05em;
-    }
-    ```
+```css
+.introduction > p,
+.location > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+```
 
     8) Finally, style your questions.
 
-    ```css
-    .questions-section > h2 {
-        /* Typography Declarations */
-        font-family: "Gentium Book Basic", Georgia, serif;
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-    ```
+```css
+.questions-section > h2 {
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+```
 
     Your final CSS should look like this (Notice that a few CSS comments have been added. These comments will not affect the code. They allow you to clearly see the additions.):
 
-    ```css
-    body {
-        /* Typography Declarations */
-        color: #222222;
-        font-size: 1em;
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    }
+```css
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-    .content-footer,
-    .masthead-heading,
-    .masthead-intro {
-      text-align: center;
-    }
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
 
-    .masthead {
-        padding: 6em 0;
-        background-image: url('http://i.imgur.com/lvXbgcg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-top: solid 1em #FFCF33;
-    }
+.masthead {
+    padding: 6em 0;
+    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1em #FFCF33;
+}
 
-    .masthead-intro {
-        /* Layout Declarations */
-        margin-bottom: 0.1em;
-        /* Typography Declarations */
-        font-family: "Gentium Book Basic", Georgia, serif;
-        font-size: 2em;
-    }
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
 
-    .masthead-heading {
-        /* Layout Declarations */
-        margin-top: -0.2em;
-        /* Typography Declarations */
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
-        font-weight: bold;
-        font-size: 6em;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-    }
+.masthead-heading {
+    /* Layout Declarations */
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
 
-    .content-footer,
-    .introduction-section,
-    .location-section,
-    .questions-section {
-        max-width: 38em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-    }
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
 
-    .social > li {
-        display: inline-block;
-    }
+.social > li {
+    display: inline-block;
+}
 
-    .introduction-section > p,
-    .location-section > p,
-    .content-footer > p {
-        /* Typography Declarations */
-        font-weight: 300;
-        letter-spacing: 0.05em;
-    }
+.introduction-section > p,
+.location-section > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
 
-    .questions-section > h2 {
-        font-family: "Gentium Book Basic", Georgia, serif;
-        font-size: 1.2em;
-        font-weight: bold;
-        /* Layout */
-        margin: 2em 0 1em 0;
-    }
+.questions-section > h2 {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+}
 
-    section > h1 {
-        margin-top: 2em;
-    }
-    ```
+section > h1 {
+    margin-top: 2em;
+}
+```
 
 In the next lesson, you will spruce things up.
 
@@ -753,17 +755,17 @@ Finish styling your 'About Me' Page. Once you've picked out an appropriate cover
 
 Here's an example for the background-color property that'll turn your footer red:
 
-    ```css
-    .content-footer {
-      /* Red, Green, Blue: #RRGGBB */
-      background-color: #FF0000;
-    }
-    If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
+```css
+.content-footer {
+  /* Red, Green, Blue: #RRGGBB */
+  background-color: #FF0000;
+}
+If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
 
-    h1 {
-      color: #FF0000;
-    }
-    ```
+h1 {
+  color: #FF0000;
+}
+```
 
 Other CSS Effects
 Finally, you can add a ton of awesome visual effects with CSS. Here's a list of a few cool ones with links to tutorials if you want to try them out.
