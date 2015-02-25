@@ -432,7 +432,7 @@ Steps:
         margin-left: auto;
         margin-right: auto;
         margin-top: 2em;
-        }
+    }
     ```
 
 3. Add the `.content-footer` class to the same selector used for text-aligning code in your header to center the footer text. 
@@ -459,7 +459,7 @@ Steps:
 
     ```css
     .content-footer > p {
-     color: white;
+        color: white;
     }
     ```
 
@@ -468,23 +468,7 @@ So far, you've centered things using two different techniques: 1) text-align: ce
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
 
-##Positioning and Layout
-
-Your site is almost complete. The HTML is well organized and your CSS has positioned all of your elements to match your design's layout. You're well on your way. Before moving onto adjusting typography, recap a few important points from this assignment.
-
-Key Positioning and Layout Take-aways:
-Use appropriate HTML tags to incorporate "Semantic HTML".
-Use "classes" to link specific HTML elements to CSS selectors.
-Stack several CSS classes into one selector so they all have the same styles.
-Target certain tags within a class by using the class > element selector, i.e. .social > li to target all of the list items within the ".social" class.
-Use display: inline-block; to have all the items within a list display in a single horizontal line.
-Use "em" instead of any fixed measurements (pt, inches, etc.)
-Although relative, 1 em is usually equivalent to 16pt font size
-Each block level element has 3 levels of space around it -- 1) padding, 2) border, and 3) margin.
-Make block elements bigger by adding padding to move the border out. (The text won't get bigger, but the border around the text will grow.)
-Adjust margins to push other elements away from your element. Margins keep the border the same but add additional space.
-The best way to center a section is to 1) define the section's width, 2) margin-right: auto;, and 3) margin-left: auto;.
-Before moving to the next section, Typography, let's make sure that our HTML is identical.
+##Check your code
 
 Your HTML should look like this:
 
@@ -564,6 +548,31 @@ Your CSS should look like this:
 }
 ```
 
+##Key Positioning and Layout Take-aways:
+
+Your site is almost complete. The HTML is well organized and your CSS has positioned all of your elements to match your design's layout. You're well on your way. Before moving onto adjusting typography, recap a few important points from this assignment.
+
+- Use appropriate HTML tags to incorporate "Semantic HTML".
+
+- Use "classes" to link specific HTML elements to CSS selectors.
+Stack several CSS classes into one selector so they all have the same styles.
+
+- Target certain tags within a class by using the class > element selector, i.e. .social > li to target all of the list items within the ".social" class.
+
+- Use display: inline-block; to have all the items within a list display in a single horizontal line.
+
+- Use "em" instead of any fixed measurements (pt, inches, etc.)
+Although relative, 1 em is usually equivalent to 16pt font size
+Each block level element has 3 levels of space around it -- 1) padding, 2) border, and 3) margin.
+
+- Make block elements bigger by adding padding to move the border out. (The text won't get bigger, but the border around the text will grow.)
+
+- Adjust margins to push other elements away from your element. Margins keep the border the same but add additional space.
+
+- The best way to center a section is to 1) define the section's width, 2) margin-right: auto;, and 3) margin-left: auto;.
+
+- Before moving to the next section, Typography, let's make sure that our HTML is identical.
+
 ##Upgrade your font
 
 Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
@@ -582,7 +591,7 @@ font-size lets you set how large the font appears. Using 1em for the font size m
 
 Notice the comma-delimited font names for the font-family property. This is known as a font stack, and it provides some "fallback" fonts in case something goes wrong with the web font selected. The browser will first try to use Open Sans. If it can't use Open Sans, it will try to use Helvetica Neue. If Helvetica Neue is not available, it will try to use the default sans-serif font for the system. On Windows, that's Arial. On Mac, that's Helvetica. This gives some control over fonts in case something goes wrong.
 
-6) Next, add some typographic styling to the classes in your header section.
+Next, add some typographic styling to the classes in your header section.
 
 ```css
 .masthead-intro {
@@ -620,7 +629,7 @@ text-transform: Controls special features about text display. In this case, it's
 }
 ```
 
-    8) Finally, style your questions.
+Finally, style your questions.
 
 ```css
 .questions-section > h2 {
@@ -711,7 +720,7 @@ section > h1 {
 
 In the next lesson, you will spruce things up.
 
-##Add extra style to your page
+##Add **extra style** to your page
 
 Finish styling your 'About Me' Page. Once you've picked out an appropriate cover image, you can use a popular design tool called Adobe Kuler to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
 
