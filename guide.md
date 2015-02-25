@@ -280,7 +280,7 @@ Steps:
     </section>
     ```
 
-2. Add dedicated CSS class attributes to each section. For section one add class="introduction-section". For section two add class="location-section". For section three add class="questions-section".
+2. Add dedicated CSS class attributes to each section. For section one add `class="introduction-section"`. For section two add `class="location-section"`. For section three add `class="questions-section"`.
 
     ```html
     <section class="introduction-section">
@@ -319,7 +319,7 @@ Steps:
 
     NOTE: This is an excellent strategy for centering block elements! By setting the `max-width` property, that element cannot be any wider then the specified width. `margin-left: auto` and `margin-right: auto` will only work if you've defined a width.
 
-4. You still need to add some margin to the top of each middle section with margin-top:2em;. Your CSS should now look like this:
+4. You still need to add some margin to the top of each middle section with `margin-top: 2em`. Your CSS should now look like this:
 
     ```css
     .masthead-heading,
@@ -364,118 +364,109 @@ Perfect. Now it's time to create the footer.
 
 ##Footer
 
-As always, start by analyzing the wireframe.
+In our (example site)[http://tatianatylosky.github.io/personal-website-example/], notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
 
-Notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
+Steps:
 
-footeranalysis.png
+1. In your `index.html` file add the following class attributes to your footer tags and content. A few tags that you'll use include: `<ul>` which stands for unordered list, `<li>` which stands for list items within the unordered list, and `<a>` tag with an href attribute which is used to link text.
 
-Coding
-Back in your HTML, add the following class attributes to your footer tags and content. A few tags that you'll use include: `<ul>` which stands for unordered list, `<li>` which stands for list items within the unordered list, and `<a>` tag with an href attribute which is used for linked text. Your code should look like this:
+    ```html
+    <footer class="content-footer">
+        <p>Say hi to me on these social networks:</p>
+        <ul class="social">
+            <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+            <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
+            <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
+        </ul>
+    </footer>
+    ```
 
-```html
-<footer class="content-footer">
-    <p>Say hi to me on these social networks:</p>
-    <ul class="social">
-        <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
-        <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
-        <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
-    </ul>
-    <p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
-</footer>
-```
+    Your entire HTML page should now look like this:
 
-Your entire HTML page should now look like this:
+    ```html
+    <header class="masthead">  
+        <p class="masthead-intro">Hi, I'm</p>
+        <h1 class="masthead-heading">Name!</h1> 
+    </header>
+    <section class="introduction-section">
+        <h1>Introduction</h1>
+        <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
+        <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
+    </section>
+    <section class="location-section">
+        <h1>Where I'm From</h1>
+        <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
+    </section>
+    <section class="questions-section">
+        <h1>More About Me</h1>
+        <h2>What are your favorite hobbies?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE_</p>
+        <h2>What's your dream job?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+        <h2>Another question?</h2>
+        <p>_INSERT_YOUR_ANSWER_HERE</p>
+    </section>
+    <footer class="content-footer">
+        <p>Say hi to me on these social networks:</p>
+        <ul class="social">
+            <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+            <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
+            <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
+        </ul>
+    </footer>
+    ```
 
-```html
-<header class="masthead">  
-    <p class="masthead-intro">Hi, I'm</p>
-    <h1 class="masthead-heading">Name!</h1> 
-</header>
-<section class="introduction-section">
-    <h1>Introduction</h1>
-    <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
-    <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
-</section>
-<section class="location-section">
-    <h1>Where I'm From</h1>
-    <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
-</section>
-<section class="questions-section">
-    <h1>More About Me</h1>
-    <h2>What are your favorite hobbies?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE_</p>
-    <h2>What's your dream job?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-    <h2>Another question?</h2>
-    <p>_INSERT_YOUR_ANSWER_HERE</p>
-</section>
-<footer class="content-footer">
-    <p>Say hi to me on these social networks:</p>
-    <ul class="social">
-        <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
-        <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
-        <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
-    </ul>
-    <p>Cover Image via <a href="http://unsplash.com">Unsplash</a></p>
-</footer>
-```
+    You've given the entire footer the class "content-footer".
+    The text, "Say hi to me on these social networks:", is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, "social", and each link is a list item (`<li>`) with links in them (`<a>`).
 
-Make sure to take the time to really understand these changes:
+2. In CSS, you're now able to center the section. Add the ".content-footer" class to the code that centers your three middle sections. Your code should look like this:
 
-You've given the entire footer the class "content-footer".
-The text, "Say hi to me on these social networks:", is wrapped in paragraph tags.
-The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, "social", and each link is a list item (`<li>`) with links in them (`<a>`).
-In CSS, you're now able to center the section. Add the ".content-footer" class to the code that centers your three middle sections. Your code should look like this:
+    ```css
+    .content-footer,
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        }
+    ```
 
-```css
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
+3. You're now able to center the footer text. Add the ".content-footer" class to the same selector used for text-aligning code in your header. Your code should look like this:
+
+    ```css
+    .masthead-intro,
+    .masthead-heading,
+    .content-footer {
+        text-align: center;
     }
-```
+    ```
 
-You're now able to center the footer text. Add the ".content-footer" class to the same selector used for text-aligning code in your header. Your code should look like this:
+4. Next, get all of the links in your list on the same line. To do this, you need to use the "display" property and the "inline-block" value. Your CSS should look like this:
 
-```css
-.masthead-intro,
-.masthead-heading,
-.content-footer {
-    text-align: center;
-}
-```
-
-Next, get all of the links in your list on the same line. To do this, you need to use the "display" property and the "inline-block" value. Your CSS should look like this:
-
-```css
-.social > li {
-    display: inline-block;
-}
-```
+    ```css
+    .social > li {
+        display: inline-block;
+    }
+    ```
 
 Use a specific selector here. .social > li selects all of the `<li>`s tags within the .social class. The ">" selector means that only li elements that are direct children of the .social class will be displayed as inline-blocks.
 
-In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
+5. In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
-```css
-.content-footer > p {
- color: white;
-}
-```
+    ```css
+    .content-footer > p {
+     color: white;
+    }
+    ```
 
 Theory: Centering things
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring margin-left: auto;, margin-right:auto;. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
-
-
 
 
 ##Positioning and Layout
