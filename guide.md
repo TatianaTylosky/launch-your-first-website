@@ -463,7 +463,8 @@ Steps:
     }
     ```
 
-Theory: Centering things
+Theory:
+
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring margin-left: auto;, margin-right:auto;. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
@@ -548,9 +549,9 @@ Your CSS should look like this:
 }
 ```
 
-##Key Positioning and Layout Take-aways:
+##Key Layout Take-aways:
 
-Your site is almost complete. The HTML is well organized and your CSS has positioned all of your elements to match your design's layout. You're well on your way. Before moving onto adjusting typography, recap a few important points from this assignment.
+Your site is almost complete. The HTML is well organized and your CSS has positioned all of your elements to match your design's layout. You're well on your way. Before moving onto adjusting typography and colors, recap a few important points from this assignment.
 
 - Use appropriate HTML tags to incorporate "Semantic HTML".
 
@@ -582,12 +583,13 @@ body {
     /* Typography Declarations */
     color: #222222;
     font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
 }
 ```
 
-To style a font color, use color with a HEX code value. A HEX code is simply a 6 digit code that represents a color.
-font-size lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
+Theory:
+
+To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color. `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
 
 Notice the comma-delimited font names for the font-family property. This is known as a font stack, and it provides some "fallback" fonts in case something goes wrong with the web font selected. The browser will first try to use Open Sans. If it can't use Open Sans, it will try to use Helvetica Neue. If Helvetica Neue is not available, it will try to use the default sans-serif font for the system. On Windows, that's Arial. On Mac, that's Helvetica. This gives some control over fonts in case something goes wrong.
 
