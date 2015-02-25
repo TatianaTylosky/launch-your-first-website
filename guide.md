@@ -572,153 +572,150 @@ Each block level element has 3 levels of space around it -- 1) padding, 2) borde
 
 - The best way to center a section is to 1) define the section's width, 2) margin-right: auto;, and 3) margin-left: auto;.
 
-- Before moving to the next section, Typography, let's make sure that our HTML is identical.
+##Add extra style to your page
 
-##Upgrade your font
+Let's add the final touches to get your site looking beautful now that we have the formatting dow.
 
-Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
+1. Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
 
-```css
-body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Helvetica Neue", "Open Sans", sans-serif;
-}
-```
+    ```css
+    body {
+        /* Typography Declarations */
+        color: #222222;
+        font-size: 1em;
+        font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    }
+    ```
 
-Theory:
+    To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color. `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
 
-To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color. `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
+2. Style the fonts ofyour `masthead-intro` and `masthead-heading` classes.
 
-Notice the comma-delimited font names for the font-family property. This is known as a font stack, and it provides some "fallback" fonts in case something goes wrong with the web font selected. The browser will first try to use Open Sans. If it can't use Open Sans, it will try to use Helvetica Neue. If Helvetica Neue is not available, it will try to use the default sans-serif font for the system. On Windows, that's Arial. On Mac, that's Helvetica. This gives some control over fonts in case something goes wrong.
+    ```css
+    .masthead-intro {
+        margin-bottom: 0.1em;
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 2em;
+    }
 
-Next, add some typographic styling to the classes in your header section.
+    .masthead-heading {
+        margin-top: -0.2em;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: bold;
+        font-size: 6em;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    ```
 
-```css
-.masthead-intro {
-    margin-bottom: 0.1em;
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
+    There's a couple of new properties here as well: letter-spacing, font-weight, font-style, and text-transform.
 
-.masthead-heading {
-    margin-top: -0.2em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
-```
+    Here are items to notice about what you've added to your CSS:
 
-There's a couple of new properties here as well: letter-spacing, font-weight, font-style, and text-transform.
+    letter-spacing: Defines the tracking between subsequent letters in words. A negative value for letter-spacing makes letters closer together. A positive value makes them farther apart.
+    font-weight: Defines the weight of the font. Choices include bold, bolder, light, as well as numerical values that are defined by each typeface for fine-grained control.
+    text-transform: Controls special features about text display. In this case, it's used to make all letters uppercase.
 
-Here are items to notice about what you've added to your CSS:
+3. Now, style the paragraphs in each of your sections.
+        
+    ```css
+    .introduction > p,
+    .location > p,
+    .content-footer > p {
+        /* Typography Declarations */
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+    ```
 
-letter-spacing: Defines the tracking between subsequent letters in words. A negative value for letter-spacing makes letters closer together. A positive value makes them farther apart.
-font-weight: Defines the weight of the font. Choices include bold, bolder, light, as well as numerical values that are defined by each typeface for fine-grained control.
-text-transform: Controls special features about text display. In this case, it's used to make all letters uppercase.
-7) Now, style the paragraphs in each of your sections.
-    
-```css
-.introduction > p,
-.location > p,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-```
+    Finally, style your questions.
 
-Finally, style your questions.
+    ```css
+    .questions-section > h2 {
+        /* Typography Declarations */
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    ```
 
-```css
-.questions-section > h2 {
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-```
+4. Your final CSS should look like this (Notice that a few CSS comments have been added. These comments will not affect the code. They allow you to clearly see the additions.):
 
-    Your final CSS should look like this (Notice that a few CSS comments have been added. These comments will not affect the code. They allow you to clearly see the additions.):
+    ```css
+    body {
+        /* Typography Declarations */
+        color: #222222;
+        font-size: 1em;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    }
 
-```css
-body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
+    .content-footer,
+    .masthead-heading,
+    .masthead-intro {
+      text-align: center;
+    }
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
-}
+    .masthead {
+        padding: 6em 0;
+        background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: solid 1em #FFCF33;
+    }
 
-.masthead {
-    padding: 6em 0;
-    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: solid 1em #FFCF33;
-}
+    .masthead-intro {
+        /* Layout Declarations */
+        margin-bottom: 0.1em;
+        /* Typography Declarations */
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 2em;
+    }
 
-.masthead-intro {
-    /* Layout Declarations */
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
+    .masthead-heading {
+        /* Layout Declarations */
+        margin-top: -0.2em;
+        /* Typography Declarations */
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: bold;
+        font-size: 6em;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
 
-.masthead-heading {
-    /* Layout Declarations */
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
+    .content-footer,
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
 
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
+    .social > li {
+        display: inline-block;
+    }
 
-.social > li {
-    display: inline-block;
-}
+    .introduction-section > p,
+    .location-section > p,
+    .content-footer > p {
+        /* Typography Declarations */
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
 
-.introduction-section > p,
-.location-section > p,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
+    .questions-section > h2 {
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        /* Layout */
+        margin: 2em 0 1em 0;
+    }
 
-.questions-section > h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
-}
-
-section > h1 {
-    margin-top: 2em;
-}
-```
+    section > h1 {
+        margin-top: 2em;
+    }
+    ```
 
 In the next lesson, you will spruce things up.
 
