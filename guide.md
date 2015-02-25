@@ -251,16 +251,11 @@ Negative measurements: You're using a negative margin to bring two elements clos
 
 ##Middle
 
-###The HTML
+When looking at the design's three middle sections, there are a few things you should notice: The three sections are all marked with a prominent header and paragraph text. The last section titled, "More About Me" has sub headers. All of this content is centered in the middle of the page but the text is aligned left. These observations will direct how you code these sections.
 
-When looking at the design's three middle sections, there are a few things you should notice:
+Steps:
 
-The three sections are all marked with a prominent header and paragraph text.
-The last section titled, "More About Me" has sub headers.
-All of this content is centered in the middle of the page but the text is aligned left.
-These observations will direct how you code these sections.
-
-1. Go ahead and add the raw content into the HTML using `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
+1. Go ahead and add your content into the `index.html` file using `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
 
     ```html
     <section>
@@ -285,7 +280,7 @@ These observations will direct how you code these sections.
     </section>
     ```
 
-2. Add dedicated CSS class attributes to each section. For section one add class="introduction-section". For section two add class="location-section". For section three add class="questions-section". Your code should now look like this:
+2. Add dedicated CSS class attributes to each section. For section one add class="introduction-section". For section two add class="location-section". For section three add class="questions-section".
 
     ```html
     <section class="introduction-section">
@@ -310,85 +305,62 @@ These observations will direct how you code these sections.
     </section>
     ```
 
+3. Now that all of your HTML is marked up, it's time to adjust the CSS. All of the sections should be centered, while the text within each section is left-aligned. This is best way to center a section:
+
+    ```css
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ```
+
+    NOTE: This is an excellent strategy for centering block elements! By setting the `max-width` property, that element cannot be any wider then the specified width. `margin-left: auto` and `margin-right: auto` will only work if you've defined a width.
+
+4. You still need to add some margin to the top of each middle section with margin-top:2em;. Your CSS should now look like this:
+
+    ```css
+    .masthead-heading,
+    .masthead-intro {
+        text-align: center;
+    }
+
+    .masthead {
+        padding: 6em 0;
+        background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: solid 1em #FFCF33;
+    }
+
+    .masthead-intro {
+        margin-bottom: 0.1em;
+    }
+
+    .masthead-heading {
+        margin-top: -0.2em;
+    }
+
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+    ```
+
 Theory:
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
 
 Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the `<h1>` tags within a section without defining a separate class for them.
 
-Using this guiding principle, you will not add classes for any of the `<h1>`, `<h2>`, or `<p>` tags for this project.
-
-###The CSS
-
-As you begin positioning the middle section with CSS, remind yourself of the three observations made about this middle section.
-
-The three sections are all marked with a prominent header and paragraph text.
-The last section titled, "More About Me" has sub-headers.
-All of this content is centered in the middle of the page but the text is aligned left.
-
-Coding
-Now that all of your HTML is marked up, it's time to adjust the CSS. All of the sections should be centered, while the text within each section is left-aligned. This is best way to center a section:
-
-```css
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-}
-```
-
-The above code does the following to your content:
-
-Sets a fixed "max-width" property.
-Sets "margin-left" to "auto"
-Sets "margin-right" to "auto"
-Remember this strategy for centering block elements: By setting the max-width property, that element cannot be any wider then the specified width. margin-left:auto and margin-right: auto only works if you've defined a width.
-
-You still need to add some margin to the top of each middle section with margin-top:2em;. Your CSS should now look like this:
-
-```css
-.masthead-heading,
-.masthead-intro {
-    text-align: center;
-}
-
-.masthead {
-    padding: 6em 0;
-    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: solid 1em #FFCF33;
-}
-
-.masthead-intro {
-    margin-bottom: 0.1em;
-}
-
-.masthead-heading {
-    margin-top: -0.2em;
-}
-
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-```
+Using this guiding principle, you will not add classes for any of the `<h1>`, `<h2>`, or `<p>` tags for this project
 
 Perfect. Now it's time to create the footer.
-
-
-
-
-
-
-
-
-
 
 ##Footer
 
