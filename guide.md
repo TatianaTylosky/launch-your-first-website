@@ -364,7 +364,7 @@ Perfect. Now it's time to create the footer.
 
 ##Footer
 
-In our (example site)[http://tatianatylosky.github.io/personal-website-example/], notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
+In our [example site](http://tatianatylosky.github.io/personal-website-example/), notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
 
 Steps:
 
@@ -418,10 +418,10 @@ Steps:
     </footer>
     ```
 
-    You've given the entire footer the class "content-footer".
-    The text, "Say hi to me on these social networks:", is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, "social", and each link is a list item (`<li>`) with links in them (`<a>`).
+    You've given the entire footer class `"content-footer"`.
+    The text, `"Say hi to me on these social networks:"`, is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, `"social"`, and each link is a list item (`<li>`) with links in them (`<a>`).
 
-2. In CSS, you're now able to center the section. Add the ".content-footer" class to the code that centers your three middle sections. Your code should look like this:
+2. In CSS, you're now able to center the section. Add the `.content-footer class to the code that centers your three middle sections. Your code should look like this:
 
     ```css
     .content-footer,
@@ -435,7 +435,7 @@ Steps:
         }
     ```
 
-3. You're now able to center the footer text. Add the ".content-footer" class to the same selector used for text-aligning code in your header. Your code should look like this:
+3. Add the `.content-footer` class to the same selector used for text-aligning code in your header to center the footer text. 
 
     ```css
     .masthead-intro,
@@ -445,7 +445,7 @@ Steps:
     }
     ```
 
-4. Next, get all of the links in your list on the same line. To do this, you need to use the "display" property and the "inline-block" value. Your CSS should look like this:
+4. Next, get all of the links in your list on the same line. To do this, you need to use the `display` property and the `inline-block` value. Your CSS should look like this:
 
     ```css
     .social > li {
@@ -453,7 +453,7 @@ Steps:
     }
     ```
 
-Use a specific selector here. .social > li selects all of the `<li>`s tags within the .social class. The ">" selector means that only li elements that are direct children of the .social class will be displayed as inline-blocks.
+    Use a specific selector here. `.social > li` selects all of the `<li>`s tags within the `.social` class. The `>` selector means that only li elements that are direct children of the `.social` class will be displayed as inline-blocks.
 
 5. In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
@@ -467,7 +467,6 @@ Theory: Centering things
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring margin-left: auto;, margin-right:auto;. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
-
 
 ##Positioning and Layout
 
