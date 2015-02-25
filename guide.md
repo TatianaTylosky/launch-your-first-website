@@ -574,7 +574,7 @@ Each block level element has 3 levels of space around it -- 1) padding, 2) borde
 
 ##Add extra style to your page
 
-Let's add the final touches to get your site looking beautful now that we have the formatting dow.
+Let's add the final touches to get your site looking beautful now that we have the formatting down.
 
 1. Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
 
@@ -730,8 +730,11 @@ Here's an example for the background-color property that'll turn your footer red
   /* Red, Green, Blue: #RRGGBB */
   background-color: #FF0000;
 }
+```
+
 If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
 
+```css
 h1 {
   color: #FF0000;
 }
