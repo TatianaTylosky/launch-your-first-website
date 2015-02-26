@@ -572,11 +572,11 @@ Each block level element has 3 levels of space around it -- 1) padding, 2) borde
 
 - The best way to center a section is to 1) define the section's width, 2) margin-right: auto;, and 3) margin-left: auto;.
 
-##Add extra style to your page
+##Style your font
 
-Let's add the final touches to get your site looking beautful now that we have the formatting down.
+Let's change our fonts!
 
-1. Change the font of the entire document to Helvetica Neue. At the very top of the CSS page add:
+1. Change the font of the entire document to Helvetica Neue. At the very top of your style.css file add:
 
     ```css
     body {
@@ -607,14 +607,6 @@ Let's add the final touches to get your site looking beautful now that we have t
         text-transform: uppercase;
     }
     ```
-
-    There's a couple of new properties here as well: letter-spacing, font-weight, font-style, and text-transform.
-
-    Here are items to notice about what you've added to your CSS:
-
-    letter-spacing: Defines the tracking between subsequent letters in words. A negative value for letter-spacing makes letters closer together. A positive value makes them farther apart.
-    font-weight: Defines the weight of the font. Choices include bold, bolder, light, as well as numerical values that are defined by each typeface for fine-grained control.
-    text-transform: Controls special features about text display. In this case, it's used to make all letters uppercase.
 
 3. Now, style the paragraphs in each of your sections.
         
@@ -717,28 +709,28 @@ Let's add the final touches to get your site looking beautful now that we have t
     }
     ```
 
-In the next lesson, you will spruce things up.
+Now you should have beautiful fonts for your page! In the next section we'll add a splash of color.
 
 ##Add **extra style** to your page
 
-Finish styling your 'About Me' Page. Once you've picked out an appropriate cover image, you can use a popular design tool called Adobe Kuler to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
+Let's add the final touches to get your site looking beautful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called [Adobe Kuler](https://color.adobe.com/) to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
 
-Here's an example for the background-color property that'll turn your footer red:
+1. Change your footer color. Here's an example for the background-color property that'll turn your footer red:
 
-```css
-.content-footer {
-  /* Red, Green, Blue: #RRGGBB */
-  background-color: #FF0000;
-}
-```
+    ```css
+    .content-footer {
+      /* Red, Green, Blue: #RRGGBB */
+      background-color: #FF0000;
+    }
+    ```
 
-If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
+2. Change your font color. If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
 
-```css
-h1 {
-  color: #FF0000;
-}
-```
+    ```css
+    h1 {
+      color: #FF0000;
+    }
+    ```
 
 Other CSS Effects
 Finally, you can add a ton of awesome visual effects with CSS. Here's a list of a few cool ones with links to tutorials if you want to try them out.
@@ -747,6 +739,8 @@ box-shadow: http://css-tricks.com/snippets/css/css-box-shadow/
 text-shadow: http://css-tricks.com/snippets/css/css-text-shadow/
 border-radius: http://css-tricks.com/almanac/properties/b/border-radius/
 
+Theory:
+??? 
 
 ##Challenge: Get your site live using Github pages
 
