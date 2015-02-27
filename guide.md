@@ -55,7 +55,7 @@ Steps:
       </html>
     ```
 
-<img src="http://GIFS/making-index-file.gif" align="center" height="700" width="1000" >
+![](/GIFS/making-index-file.gif)
 
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
