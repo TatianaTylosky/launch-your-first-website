@@ -4,7 +4,7 @@
 
 ###Your mission:
 
-You're going to build and **launch live** your own amazing "About Me" website! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
+You're going to build and launch your own amazing "About Me" website! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
 
 Here is [the example](http://tatianatylosky.github.io/personal-website-example/) we will be referring to throughout this guide:
 ![](images/tatiana.png)
