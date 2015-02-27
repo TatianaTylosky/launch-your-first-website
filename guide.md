@@ -4,16 +4,17 @@
 
 ###Your mission:
 
-You're going to build and launch your own amazing "About Me" website! AND it will be totally free. Sound to good to be true? [False](http://i.imgur.com/A688v8m.png).
+You're going to build and launch your own amazing "About Me" website! AND it will be totally free. Sound to good to be true? <a href="http://i.imgur.com/A688v8m.png" target="_blank">False</a>.
 
-Here is [the example](http://tatianatylosky.github.io/personal-website-example/) we will be referring to throughout this guide:
+Here is <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">the example</a> we will be referring to throughout this guide:
+
 ![](images/tatiana.png)
 
 ###Guide Philosophy
 
-This guide is based on the principle of [project-driven learning](http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning). We believe the best way to learn a new skill is by creating a project of your own.
+This guide is based on the principle of <a href="http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning" target="_blank">project-driven learning</a>. We believe the best way to learn a new skill is by creating a project of your own.
 
-We also think learning should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to help you follow along with each step. Also at the end of each section we'll go into detail explaining the theory behind what you just did.
+We also think learning should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to help you follow along with each step. At the end of each section we'll go into detail explaining the theory behind what you just did.
 
 ###What do I need?
 
@@ -21,7 +22,7 @@ Yourself, a computer, and the internet. In this tutorial, we'll start from the v
 
 ###Why learn HTML/CSS?
 
-Because this stuff is important. Whether you're a business person formatting your emails, an aspiring web designer wanting to get your feet wet, or just someone who is interested and hasn't tried any sort of coding, scripting, or programming before, HTML and CSS are an essential part of your learning curve.
+Because this stuff is important. Whether you're a business person formatting your emails or an aspiring web designer wanting to get your feet wet HTML and CSS are an essential part of your learning curve.
 
 ##Setup and test run
 
@@ -32,7 +33,7 @@ Steps:
 
 1. Create a folder where you are going to save your website's files such as "My Website".
 
-2. Download Sublime [here](http://www.sublimetext.com/3) and open it (it's free!). The initial page should look like this:
+2. Download Sublime <a href="http://www.sublimetext.com/3" target="_blank">here</a> and open it (it's free!). The initial page should look like this:
 
   ![](images/sublime.png)
 
@@ -54,14 +55,11 @@ Steps:
       </html>
     ```
 
-    GIF HERE
-
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
-    GIF HERE
+5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. **If you are having trouble with this step, take a look at the GIF below or tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.** 
 
-5. [You did it](http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS)! Awesome. **If you are having trouble with this step, tweet [@Thinkful](https://twitter.com/thinkful) and we can help you out.** 
-
+![](making-index-file.gif)
 
 ###Theory:
 HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`). Now let's go over those tags that you just created.
@@ -84,7 +82,7 @@ Every HTML document and website has to have the special tag `<!doctype html>` be
 
 ##Add Sections
 
-Let's create the different parts of your website: header, sections, and footer (Refer back to our [example site](http://tatianatylosky.github.io/personal-website-example/) to see what this will look like).
+Let's create the different parts of your website: header, sections, and footer (Refer back to our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a> to see what this will look like).
 
 Steps
 
@@ -217,7 +215,7 @@ Steps:
     ```
 
 
-    Check out [this blog post](https://news.layervault.com/stories/20663-stock-photos-that-dont-suck) for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
+    Check out <a href="https://news.layervault.com/stories/20663-stock-photos-that-dont-suck" target="_blank">this blog post</a> for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
 
 9. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. Include the image's url in the background-image property to the .masthead class:
 
@@ -361,7 +359,7 @@ Perfect. Now it's time to create the footer.
 
 ##Footer
 
-In our [example site](http://tatianatylosky.github.io/personal-website-example/), notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
+In our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a>, notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
 
 Steps:
 
@@ -711,7 +709,7 @@ Now you should have beautiful fonts for your page! In the next section we'll add
 
 ##Add **extra style** to your page
 
-Let's add the final touches to get your site looking beautful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called [Adobe Kuler](https://color.adobe.com/) to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
+Let's add the final touches to get your site looking beautful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called <a href="https://color.adobe.com/" target="_blank">Adobe Kuler</a> to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
 
 1. Change your footer color. Here's an example for the background-color property that'll turn your footer red:
 
