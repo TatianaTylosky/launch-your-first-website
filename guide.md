@@ -204,10 +204,7 @@ Steps:
 
     ```css
     .masthead {
-        padding-top: 6em;
-        padding-bottom: 6em;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 6em 0;
     }
 
     .masthead-intro {
@@ -227,7 +224,7 @@ Steps:
     ```css
     .masthead {
         padding: 6em 0;
-        background-image: url('http://photo.jpg');
+        background-image: url('photo.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         border-top: solid 10px white;
@@ -421,7 +418,7 @@ Steps:
     You've given the entire footer class `"content-footer"`.
     The text, `"Say hi to me on these social networks:"`, is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, `"social"`, and each link is a list item (`<li>`) with links in them (`<a>`).
 
-2. In CSS, you're now able to center the section. Add the `.content-footer class to the code that centers your three middle sections. Your code should look like this:
+2. In CSS, you're now able to center the section. Add the `.content-footer` class to the code that centers your three middle sections. Your code should look like this:
 
     ```css
     .content-footer,
@@ -580,6 +577,7 @@ Let's change our fonts!
 
     ```css
     body {
+        background-color: white;
         /* Typography Declarations */
         color: #222222;
         font-size: 1em;
@@ -594,13 +592,13 @@ Let's change our fonts!
     ```css
     .masthead-intro {
         margin-bottom: 0.1em;
-        font-family: "Gentium Book Basic", Georgia, serif;
+        font-family: "Gentium Book Basic";
         font-size: 2em;
     }
 
     .masthead-heading {
         margin-top: -0.2em;
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: "Helvetica Neue";
         font-weight: bold;
         font-size: 6em;
         letter-spacing: -0.02em;
@@ -638,7 +636,7 @@ Let's change our fonts!
         /* Typography Declarations */
         color: #222222;
         font-size: 1em;
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: "Helvetica Neue";
     }
 
     .content-footer,
@@ -659,7 +657,7 @@ Let's change our fonts!
         /* Layout Declarations */
         margin-bottom: 0.1em;
         /* Typography Declarations */
-        font-family: "Gentium Book Basic", Georgia, serif;
+        font-family: "Gentium Book Basic";
         font-size: 2em;
     }
 
@@ -667,7 +665,7 @@ Let's change our fonts!
         /* Layout Declarations */
         margin-top: -0.2em;
         /* Typography Declarations */
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: "Helvetica Neue";
         font-weight: bold;
         font-size: 6em;
         letter-spacing: -0.02em;
