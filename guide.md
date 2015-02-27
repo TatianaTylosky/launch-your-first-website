@@ -55,11 +55,11 @@ Steps:
       </html>
     ```
 
+![](GIFS/making-index-file.gif)
+
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
-5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. **If you are having trouble with this step, take a look at the GIF below or tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.** 
-
-![](making-index-file.gif)
+5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, take a look at the GIF below or tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
 
 ###Theory:
 HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`). Now let's go over those tags that you just created.
