@@ -720,7 +720,7 @@ Let's add the final touches to get your site looking beautful now that we have t
     }
     ```
 
-2. Change your font color. If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your <h1> text red:
+2. Change your font color. If you want to apply color to text, as opposed to the background, you need to use the color property. This code will turn your `<h1>` text red:
 
     ```css
     h1 {
