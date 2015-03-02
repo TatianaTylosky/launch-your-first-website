@@ -56,7 +56,7 @@ Steps:
 
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
-    ![](gifs/open-in-browser.gif)
+    GIF HERE
 
 5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
 
@@ -107,8 +107,6 @@ Steps
     ```
 
 Notice we went ahead and took out the "I can haz code?!".
-
-<!-- ![](gifs/add-sections.gif) -->
 
 ###Theory:
 
@@ -163,7 +161,7 @@ Steps:
     ```
     We are temporarily making your background blue so that in the next step you can tell if you've linked your css file correctly!
 
-    ![](gifs/create-css-file.gif)
+    GIF HERE
 
 4. Next we'll link your CSS file to your html file. Add the following line of code to your index.html file in between the `<head></head>` tags.
 
@@ -562,8 +560,6 @@ Let's change our fonts!
     ```
 
     To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color. `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
-
-<!--     ![](gifs/change-body-font.gif) -->
 
 2. Style the fonts ofyour `masthead-intro` and `masthead-heading` classes.
 
