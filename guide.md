@@ -26,7 +26,6 @@ Because this stuff is important. Whether you're a business person formatting you
 
 ##Setup and test run
 
-Overview: 
 Let's start by creating a HTML file and opening it using a web browser.
 
 Steps:
@@ -54,8 +53,6 @@ Steps:
         </body>
       </html>
     ```
-
-    ![](gifs/making-index-file.gif)
 
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
