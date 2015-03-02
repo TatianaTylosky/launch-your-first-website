@@ -58,10 +58,10 @@ Steps:
 
     ![](gifs/open-in-browser.gif)
 
-5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, take a look at the GIF below or tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
+5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
 
 ###Theory:
-HTML (HyperText Markup Language) consists of these things called tags, which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`). Now let's go over those tags that you just created.
+HTML (HyperText Markup Language) consists of tags. Tags which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`). Now let's go over those tags that you just created.
 
 ```html
   <!doctype html>
@@ -112,7 +112,7 @@ Notice we went ahead and took out the "I can haz code?!".
 
 ###Theory:
 
-You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - `<header></header>`, `<section></section>`, and `<footer></footer>`. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page. A web page has a header and a footer, and is usually divided up into sections, so it makes sense to make these divisions using the header, footer, and section tags.
+You now have the skeleton layout for your new "About Me" page. You're using a few important HTML5 elements - `<header></header>`, `<section></section>`, and `<footer></footer>`. These elements let you divide the page into semantically meaningful partitions - this technique is called Semantic HTML. This means that your markup (HTML tags) match the conceptual model of your page.
 
 ##Header
 
@@ -122,7 +122,7 @@ Let's add the header! When you look at the header's design, you see three things
 
 Steps:
 
-1. Start by adding the text content to your HTML:
+1. Start by adding the text content to your HTML in between your `<header></header>` tags:
 
     ```html
     <header>  
@@ -135,9 +135,9 @@ Steps:
     <footer></footer>
     ```
 
-<!--     ![](gifs/add-section-info.gif) -->
+    You should be able to see this in your browser if you refresh the page.
 
-2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute in your HTML.
+2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute in your HTML file.
 
     Add the following code to index.html file:
 
@@ -154,16 +154,14 @@ Steps:
 
     The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
-<!--     ![](gifs/center-heading-text.gif) -->
-
-3. Create a new file called "style.css" in your folder. Add the following code to it.
+3. Create a new file called "style.css" in your folder and add the following code to it.
 
     ```css
     body {
     background-color:red;
     }
     ```
-    We are temporarily making your background red so that in the next step you can tell if you've linked your css file correctly! If you want to choose a (better color)[http://www.colors.commutercreative.com/grid/] go for it.
+    We are temporarily making your background red so that in the next step you can tell if you've linked your css file correctly! If you want to choose a [better color](http://www.colors.commutercreative.com/grid/) go for it.
 
     ![](gifs/create-css-file.gif)
 
@@ -179,8 +177,6 @@ Steps:
     ```
 
     Save your files and refresh your browser. Your page should have a colored background! If not go over the steps one more time. One common mistake is placing your css file (style.css) in a different folder than your html file. Make sure they are in the same folder.
-
-<!--     ![](gifs/connect-css-file.gif) -->
 
 5. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
@@ -198,7 +194,7 @@ Steps:
     }
     ```
 
-6. The "masthead-heading" text is also text-aligned center. You could copy and paste the same code above but replace .masthead with .masthead-heading or you could just add the ".masthead-heading" above the ".masthead-intro" selector with a comma like this:
+6. The `.masthead-heading` text is also text-aligned center. You can style two classes at once by just adding the `.masthead-heading` above the `.masthead-intro` selector with a comma like this:
 
     ```css
     .masthead-heading,
@@ -207,7 +203,7 @@ Steps:
     }
     ```
 
-7. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. 
+7. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. Add the following to your CSS file.
 
     ```css
     .masthead {
@@ -224,7 +220,7 @@ Steps:
     ```
 
 
-    Check out <a href="https://news.layervault.com/stories/20663-stock-photos-that-dont-suck" target="_blank">this blog post</a> for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
+8. Check out <a href="https://news.layervault.com/stories/20663-stock-photos-that-dont-suck" target="_blank">this blog post</a> for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
 
 9. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. Include the image's url in the background-image property to the .masthead class:
 
