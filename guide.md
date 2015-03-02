@@ -158,10 +158,10 @@ Steps:
 
     ```css
     body {
-    background-color:red;
+    background-color:blue;
     }
     ```
-    We are temporarily making your background red so that in the next step you can tell if you've linked your css file correctly! If you want to choose a [better color](http://www.colors.commutercreative.com/grid/) go for it.
+    We are temporarily making your background blue so that in the next step you can tell if you've linked your css file correctly!
 
     ![](gifs/create-css-file.gif)
 
@@ -255,7 +255,7 @@ When looking at the design's three middle sections, there are a few things you s
 
 Steps:
 
-1. Go ahead and add your content into the `index.html` file using `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts. Make sure to use the same tags for the elements that are meant to look the same.
+1. Go ahead and add your content into the three `<section></section>` tags in your `index.html` file. Use `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts.
 
     ```html
     <section>
@@ -280,7 +280,7 @@ Steps:
     </section>
     ```
 
-2. Add dedicated CSS class attributes to each section. For section one add `class="introduction-section"`. For section two add `class="location-section"`. For section three add `class="questions-section"`.
+2. Add dedicated CSS class attributes to each `<section>` tag. For section one add `class="introduction-section"`. For section two add `class="location-section"`. For section three add `class="questions-section"`.
 
     ```html
     <section class="introduction-section">
@@ -319,7 +319,20 @@ Steps:
 
     NOTE: This is an excellent strategy for centering block elements! By setting the `max-width` property, that element cannot be any wider then the specified width. `margin-left: auto` and `margin-right: auto` will only work if you've defined a width.
 
-4. You still need to add some margin to the top of each middle section with `margin-top: 2em`. Your CSS should now look like this:
+4. You still need to add some margin to the top of each middle section with `margin-top: 2em`. 
+
+    ```css
+    .introduction-section,
+    .location-section,
+    .questions-section {
+        max-width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+
+
+5. Your CSS should now look like this:
 
     ```css
     .masthead-heading,
@@ -358,8 +371,6 @@ Classes are powerful attributes, and should be used thoughtfully. When deciding 
 
 Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the `<h1>` tags within a section without defining a separate class for them.
 
-Using this guiding principle, you will not add classes for any of the `<h1>`, `<h2>`, or `<p>` tags for this project
-
 Perfect. Now it's time to create the footer.
 
 ##Footer
@@ -368,7 +379,7 @@ In our <a href="http://tatianatylosky.github.io/personal-website-example/" targe
 
 Steps:
 
-1. In your `index.html` file add the following class attributes to your footer tags and content. A few tags that you'll use include: `<ul>` which stands for unordered list, `<li>` which stands for list items within the unordered list, and `<a>` tag with an href attribute which is used to link text.
+1. In your `index.html` file add the following class attributes to your `<footer>` tags and content. A few tags that you'll use include: `<ul>` which stands for unordered list, `<li>` which stands for list items within the unordered list, and `<a>` tag with an href attribute which is used to link text.
 
     ```html
     <footer class="content-footer">
@@ -381,47 +392,9 @@ Steps:
     </footer>
     ```
 
-    Your entire HTML page should now look like this:
+    You've given the entire footer class `"content-footer"`. The text, `"Say hi to me on these social networks:"`, is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, `"social"`, and each link is a list item (`<li>`) with links in them (`<a>`).
 
-    ```html
-    <header class="masthead">  
-        <p class="masthead-intro">Hi, I'm</p>
-        <h1 class="masthead-heading">Name!</h1> 
-    </header>
-    <section class="introduction-section">
-        <h1>Introduction</h1>
-        <p>_INSERT_YOUR_3_SENTENCE_DESCRIPTION_HERE_</p>
-        <p>_INSERT_WHAT_IS_IMPORTANT_TO_YOU_PARAGRAPH_HERE_</p>
-    </section>
-    <section class="location-section">
-        <h1>Where I'm From</h1>
-        <p>_INSERT_YOUR_LOCATION_PARAGRAPH_HERE_</p>
-    </section>
-    <section class="questions-section">
-        <h1>More About Me</h1>
-        <h2>What are your favorite hobbies?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE_</p>
-        <h2>What's your dream job?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE</p>
-        <h2>Another question?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE</p>
-        <h2>Another question?</h2>
-        <p>_INSERT_YOUR_ANSWER_HERE</p>
-    </section>
-    <footer class="content-footer">
-        <p>Say hi to me on these social networks:</p>
-        <ul class="social">
-            <li><a href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
-            <li><a href="_INSERT_TWITTER_URL_HERE_">Twitter</a></li>
-            <li><a href="_INSERT_GOOGLE+_URL_HERE_">Google+</a></li>
-        </ul>
-    </footer>
-    ```
-
-    You've given the entire footer class `"content-footer"`.
-    The text, `"Say hi to me on these social networks:"`, is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, `"social"`, and each link is a list item (`<li>`) with links in them (`<a>`).
-
-2. In CSS, you're now able to center the section. Add the `.content-footer` class to the code that centers your three middle sections. Your code should look like this:
+3. In CSS, you're now able to center the section. Add the `.content-footer` class to the code that centers your three middle sections. Your code should look like this:
 
     ```css
     .content-footer,
@@ -453,7 +426,7 @@ Steps:
     }
     ```
 
-    Use a specific selector here. `.social > li` selects all of the `<li>`s tags within the `.social` class. The `>` selector means that only li elements that are direct children of the `.social` class will be displayed as inline-blocks.
+    You using a specific selector here. `.social > li` selects all of the `<li>`s tags within the `.social` class. The `>` selector means that only li elements that are direct children of the `.social` class will be displayed as inline-blocks.
 
 5. In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
@@ -584,7 +557,7 @@ Let's change our fonts!
         /* Typography Declarations */
         color: #222222;
         font-size: 1em;
-        font-family: "Helvetica Neue", "Open Sans", sans-serif;
+        font-family: "Helvetica Neue";
     }
     ```
 
@@ -716,7 +689,7 @@ Now you should have beautiful fonts for your page! In the next section we'll add
 
 ##Add **extra style** to your page
 
-Let's add the final touches to get your site looking beautful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called <a href="https://color.adobe.com/" target="_blank">Adobe Kuler</a> to help pick a color scheme from the image. You can then use the background-color property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code. This is in a format like #FFFFFF, with the leading # mark indicating that the value is hex. #000000 is hex for black and #FFFFFF is hex for white.
+Let's add the final touches to get your site looking beautful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called <a href="https://color.adobe.com/" target="_blank">Adobe Kuler</a> to help pick a color scheme from the image. You can then use the `background-color` property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code but you can also use [147 CSS color names](http://www.colors.commutercreative.com/grid/) if you'd prefer.
 
 1. Change your footer color. Here's an example for the background-color property that'll turn your footer red:
 
