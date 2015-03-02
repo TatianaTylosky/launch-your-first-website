@@ -59,6 +59,8 @@ Steps:
 
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
+![](gifs/making-index-file.gif)
+
 5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, take a look at the GIF below or tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
 
 ###Theory:
