@@ -108,7 +108,7 @@ Steps
 
 Notice we went ahead and took out the "I can haz code?!".
 
-![](gifs/add-sections.gif)
+<!-- ![](gifs/add-sections.gif) -->
 
 ###Theory:
 
@@ -135,7 +135,7 @@ Steps:
     <footer></footer>
     ```
 
-    ![](gifs/add-section-info.gif)
+<!--     ![](gifs/add-section-info.gif) -->
 
 2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute in your HTML.
 
@@ -154,7 +154,7 @@ Steps:
 
     The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
-    ![](gifs/center-heading-text.gif)
+<!--     ![](gifs/center-heading-text.gif) -->
 
 3. Create a new file called "style.css" in your folder. Add the following code to it.
 
@@ -180,7 +180,7 @@ Steps:
 
     Save your files and refresh your browser. Your page should have a colored background! If not go over the steps one more time. One common mistake is placing your css file (style.css) in a different folder than your html file. Make sure they are in the same folder.
 
-    ![](gifs/connect-css-file.gif)
+<!--     ![](gifs/connect-css-file.gif) -->
 
 5. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
@@ -594,7 +594,7 @@ Let's change our fonts!
 
     To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color. `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
 
-    ![](gifs/change-body-font.gif)
+<!--     ![](gifs/change-body-font.gif) -->
 
 2. Style the fonts ofyour `masthead-intro` and `masthead-heading` classes.
 
