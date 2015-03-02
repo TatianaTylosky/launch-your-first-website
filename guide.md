@@ -83,6 +83,8 @@ Every HTML document and website has to have the special tag `<!doctype html>` be
 
 Let's create the different parts of your website: header, sections, and footer (Refer back to our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a> to see what this will look like).
 
+IMAGE HERE
+
 Steps
 
 1. Add new header, section, and footer tags inside of your `<body></body>` tags. The first is the header, so use the `<header>` tags. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use `<section>` tags for each of them. Lastly, use a `<footer>` tag for your footer. Your structure should now look like this:
@@ -251,6 +253,8 @@ Negative measurements: You're using a negative margin to bring two elements clos
 
 When looking at the design's three middle sections, there are a few things you should notice: The three sections are all marked with a prominent header and paragraph text. The last section titled, "More About Me" has sub headers. All of this content is centered in the middle of the page but the text is aligned left. These observations will direct how you code these sections.
 
+IMAGE HERE
+
 Steps:
 
 1. Go ahead and add your content into the three `<section></section>` tags in your `index.html` file. Use `<h1>` tags for your prominent headers, `<h2>` tags for your secondary headers, and `<p>` tags for the paragraph texts.
@@ -374,6 +378,8 @@ Perfect. Now it's time to create the footer.
 ##Footer
 
 In our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a>, notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
+
+IMAGE HERE
 
 Steps:
 
