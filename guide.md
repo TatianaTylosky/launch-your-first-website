@@ -708,7 +708,7 @@ Let's add the final touches to get your site looking beautful now that we have t
     }
     ```
 
-Other CSS Effects
+Other CSS Style Effects
 Finally, you can add a ton of awesome visual effects with CSS. Here's a list of a few cool ones with links to tutorials if you want to try them out.
 
 * box-shadow: http://css-tricks.com/snippets/css/css-box-shadow/
