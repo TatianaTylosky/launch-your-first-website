@@ -116,7 +116,7 @@ You now have the skeleton layout for your new "About Me" page. You're using a fe
 
 Let's add the header! When you look at the header's design, you see three things -- 1) small text stating "Hi, I'm", 2) large text reading "Tati!", and 3) a background image. Notice that in the header the small text and large text are centered both horizontally and vertically.
 
-![](images/headers.png)
+IMAGE HERE
 
 Steps:
 
