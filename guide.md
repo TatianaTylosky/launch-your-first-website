@@ -8,7 +8,7 @@ You're going to build and launch your own amazing "About Me" website! AND it wil
 
 Here is <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">the example</a> we will be referring to throughout this guide:
 
-![](images/tatiana.png)
+![](images/example.png)
 
 ###Guide Philosophy
 
