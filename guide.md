@@ -14,7 +14,7 @@ Here is <a href="http://tatianatylosky.github.io/personal-website-example/" targ
 
 This guide is based on the principle of <a href="http://blog.thinkful.com/post/100829199278/project-based-v-s-project-driven-learning" target="_blank">project-driven learning</a>. We believe the best way to learn a new skill is by creating a project of your own.
 
-We also think learning should be as clear and painless as possible. Therefore throughout this guide we will use GIF images to help you follow along with each step. At the end of each section we'll go into detail explaining the theory behind what you just did.
+We also think learning should be as clear and painless as possible. Therefore throughout this guide we will use images and GIFs to help you follow along with each step. At the end of each section we'll go into detail explaining the theory behind what you just did.
 
 ###What do I need?
 
