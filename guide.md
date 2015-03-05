@@ -56,8 +56,6 @@ Steps:
 
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
-    GIF HERE
-
 5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
 
 ###Theory:
@@ -82,8 +80,6 @@ Every HTML document and website has to have the special tag `<!doctype html>` be
 ##Add Sections
 
 Let's create the different parts of your website: header, sections, and footer (Refer back to our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a> to see what this will look like).
-
-IMAGE HERE
 
 Steps
 
@@ -162,8 +158,6 @@ Steps:
     }
     ```
     We are temporarily making your background blue so that in the next step you can tell if you've linked your css file correctly!
-
-    GIF HERE
 
 4. Next we'll link your CSS file to your html file. Add the following line of code to your index.html file in between the `<head></head>` tags.
 
