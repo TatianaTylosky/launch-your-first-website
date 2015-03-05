@@ -240,7 +240,7 @@ Theory:
 
 Box Model:
 
-![](images/boxmodel.png)
+![](images/box-model.png)
 
 Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin. Increasing padding increases the distance between your element and its border. Increasing  a margin adds more space outside of your element's border.
 
