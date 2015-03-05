@@ -379,7 +379,7 @@ Perfect. Now it's time to create the footer.
 
 In our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a>, notice that the footer is text-aligned center just like the header. You also see that there are three links to social media accounts centered on one line.
 
-IMAGE HERE
+![](images/footer.png)
 
 Steps:
 
