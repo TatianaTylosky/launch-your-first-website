@@ -253,7 +253,7 @@ Negative measurements: You're using a negative margin to bring two elements clos
 
 When looking at the design's three middle sections, there are a few things you should notice: The three sections are all marked with a prominent header and paragraph text. The last section titled, "More About Me" has sub headers. All of this content is centered in the middle of the page but the text is aligned left. These observations will direct how you code these sections.
 
-IMAGE HERE
+![](images/middle.png)
 
 Steps:
 
