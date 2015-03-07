@@ -714,10 +714,10 @@ Finally, you can add a ton of awesome visual effects with CSS. Here's a list of 
 
 ##Challenge: Get your site live using GitHub pages
 
-You've worked hard to get your site running locally. Now let's share it with the world! You can use a service called Github pages to get your site up and on the internet for free. Go through our [github pages guide](http://www.thinkful.com/learn/a-guide-to-using-github-pages/) that will walk you through just that.
+You've worked hard to get your site running locally. Now let's share it with the world! You can use a service called *GitHub Pages* to get your site up and on the internet for free. Go through our [github pages guide](http://www.thinkful.com/learn/a-guide-to-using-github-pages/) that will walk you through just that.
 
 *NOTE:*
-What is Github? Besides having this awesome feature for hosting webpages, Github is a way for programmers to easily store and share code online. Github uses a software called git that allows you to track changes and the history of your projects.
+What is GitHub? Besides having this awesome feature for hosting webpages, GitHub is a way for programmers to easily store and share code online. GitHub uses a software called git that allows you to track changes and the history of your projects.
 
 ##Conclusion
 
