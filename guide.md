@@ -56,7 +56,7 @@ Steps:
 
 4. Open your "index.html" file using your internet browser. On most browsers you do this by selecting "file" --> "open file". Your browser should display the text "I can has code?!"
 
-5. <a href="http://giphy.com/gifs/reaction-spoilers-outlander-LSNqpYqGRqwrS" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
+5. <a href="http://media.giphy.com/media/LSNqpYqGRqwrS/giphy.gif" target="_blank">You did it</a>! Awesome. If you are having trouble with this step, tweet <a href="https://twitter.com/thinkful">@Thinkful</a> and we can help you out.
 
 ###Theory:
 HTML (HyperText Markup Language) consists of tags. Tags which are words written between < and > characters, like `<sometag>`. There are normally matching opening and closing tags such as `<head>` and `</head>`. You can also put tags inside other tags (like we did with the `<title>` tags inside the `<head>` tags). This is called nesting elements. In this case, we would say that the `<head>` contains the `<title>`. Sometimes when you have a lot of nested tags, it's hard to keep track, so you have to format your code with spacing, as shown. Typically, inner tags are spaced more than their outer tags (just as `<title>` is indented further than `<head>`). Now let's go over those tags that you just created.
@@ -75,16 +75,18 @@ HTML (HyperText Markup Language) consists of tags. Tags which are words written 
   </html>
 ```
 
-Every HTML document and website has to have the special tag `<!doctype html>` because it tells the browser what language we're using. This tag is special because it does not need a closing tag. Everything in the website is contained by the `<html>` tag, and the last line of your entire document will always be `</html>`. Inside `<html>`, there are two elements: `<head>` and `<body>`. Contained in `<head></head>`, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have `<title>`. The content of `<title>` will be used for the name of the tab of the browser, and also by search engines. On the other side of the planet, we have `<body></body>`. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
+Every HTML document and website has to have the special tag `<!doctype html>` because it tells the browser what language we're using. This tag is special because it does not need a closing tag. 
+
+Everything in the website is contained by the `<html>` tag, and the last line of your entire document will always be `</html>`. Inside `<html>`, there are two elements: `<head>` and `<body>`. Contained in `<head></head>`, we will put all kinds of information for the browser that the user doesn't necessarily need to see. For now, we just have `<title>`. The content of `<title>` will be used for the name of the tab of the browser, and also by search engines. 
+On the other side of the planet, we have `<body></body>`. Everything visible to the user is contained in these tags. Right now, all that consists of is "I can haz code?!" Let's change that for fun. Replace "I can haz code?!", and then open the page in your browser. Neat!
 
 ##Add Sections
 
 Let's create the different parts of your website: header, sections, and footer (Refer back to our <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">example site</a> to see what this will look like).
 
-Steps
+##Steps
 
 1. Add new header, section, and footer tags inside of your `<body></body>` tags. The first is the header, so use the `<header>` tags. Below that there are three content sections ("Introduction", "Where I'm From", and "About Me"). Use `<section>` tags for each of them. Lastly, use a `<footer>` tag for your footer. Your structure should now look like this:
-
 
     ```html
     <!doctype html>
@@ -130,8 +132,7 @@ Steps:
     <section></section>
     <footer></footer>
     ```
-
-    You should be able to see this in your browser if you refresh the page.
+  You should be able to see this in your browser if you refresh the page.
 
 2. Let's center your header text. To get the elements in your header positioned correctly, you're going to need to use CSS. To target specific parts of the CSS you're going to use the "class" attribute in your HTML file.
 
@@ -148,7 +149,7 @@ Steps:
     <footer></footer>
     ```
 
-    The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
+The header tag now has a "class" attribute equal to "masthead". The word "masthead" is nothing special. You could have chosen any word to be our class attribute. "Masthead" is commonly used for headers with big background images like this.
 
 3. Create a new file called "style.css" in your folder and add the following code to it.
 
@@ -157,7 +158,7 @@ Steps:
     background-color:blue;
     }
     ```
-    We are temporarily making your background blue so that in the next step you can tell if you've linked your css file correctly!
+We are temporarily making your background blue so that in the next step you can tell if you've linked your css file correctly!
 
 4. Next we'll link your CSS file to your html file. Add the following line of code to your index.html file in between the `<head></head>` tags.
 
@@ -170,7 +171,7 @@ Steps:
         </head>
     ```
 
-    Save your files and refresh your browser. Your page should have a colored background! If not go over the steps one more time. One common mistake is placing your css file (style.css) in a different folder than your html file. Make sure they are in the same folder.
+  Save your files and refresh your browser. Your page should have a colored background! If not go over the steps one more time. One common mistake is placing your css file (style.css) in a different folder than your html file. Make sure they are in the same folder.
 
 5. Next we will style your masthead text. In CSS you can link styles to specific class attributes. Let's start by centering the text "Hi, I'm Name!". In the HTML, "Hi, I'm" has the "masthead-intro" class. To select the "masthead-intro" class, enter this code into your CSS:
 
@@ -180,7 +181,7 @@ Steps:
     }
     ```
 
-5. This selects the masthead-intro class. Now in between the curly braces let's type the following:
+6. This selects the masthead-intro class. Now in between the curly braces let's type the following:
 
     ```css
     .masthead-intro {
@@ -188,7 +189,7 @@ Steps:
     }
     ```
 
-6. The `.masthead-heading` text is also text-aligned center. You can style two classes at once by just adding the `.masthead-heading` above the `.masthead-intro` selector with a comma like this:
+7. The `.masthead-heading` text is also text-aligned center. You can style two classes at once by just adding the `.masthead-heading` above the `.masthead-intro` selector with a comma like this:
 
     ```css
     .masthead-heading,
@@ -197,7 +198,7 @@ Steps:
     }
     ```
 
-7. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. Add the following to your CSS file.
+8. Now you need to get this content centered vertically. To do this you're going to use CSS's padding and margin properties. Add the following to your CSS file.
 
     ```css
     .masthead {
@@ -214,9 +215,9 @@ Steps:
     ```
 
 
-8. Check out <a href="https://news.layervault.com/stories/20663-stock-photos-that-dont-suck" target="_blank">this blog post</a> for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
+9. Check out <a href="https://news.layervault.com/stories/20663-stock-photos-that-dont-suck" target="_blank">this blog post</a> for tons of awesome and free stock image sites. Hopefully you'll find something that you love. Make sure your images are at least 1200x800 so they will look good on a computer monitor. When you find one that you like, save it to your computer in the same folder as your `index.html` file.
 
-9. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. Include the image's url in the background-image property to the .masthead class:
+10. To implement your background image like Brendon's example site, add the background-image property to your CSS. By adding this to a CSS class, the image you specify will be rendered in the background of the specified element. Include the image's url in the background-image property to the .masthead class:
 
     ```css
     .masthead {
@@ -228,9 +229,9 @@ Steps:
     }
     ```
 
-10. Refresh index.html file and check out your page!
+11. Refresh index.html file and check out your page!
 
-Theory:
+*Theory:*
 
 Box Model:
 
@@ -313,7 +314,8 @@ Steps:
     }
     ```
 
-    NOTE: This is an excellent strategy for centering block elements! By setting the `max-width` property, that element cannot be any wider then the specified width. `margin-left: auto` and `margin-right: auto` will only work if you've defined a width.
+*NOTE:*
+This is an excellent strategy for centering block elements! By setting the `max-width` property, that element cannot be any wider then the specified width. `margin-left: auto` and `margin-right: auto` will only work if you've defined a width.
 
 4. You still need to add some margin to the top of each middle section with `margin-top: 2em`. 
 
@@ -326,7 +328,7 @@ Steps:
         margin-right: auto;
         margin-top: 2em;
     }
-
+  ```
 
 5. Your CSS should now look like this:
 
@@ -362,7 +364,7 @@ Steps:
     }
     ```
 
-Theory:
+*Theory:*
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
 
 Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the `<h1>` tags within a section without defining a separate class for them.
@@ -390,9 +392,9 @@ Steps:
     </footer>
     ```
 
-    You've given the entire footer class `"content-footer"`. The text, `"Say hi to me on these social networks:"`, is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, `"social"`, and each link is a list item (`<li>`) with links in them (`<a>`).
+  You've given the entire footer class `"content-footer"`. The text, `"Say hi to me on these social networks:"`, is wrapped in paragraph tags. The three links to GitHub, Twitter, and Google+ are within an unordered list tag (`<ul>`) with the class, `"social"`, and each link is a list item (`<li>`) with links in them (`<a>`).
 
-3. In CSS, you're now able to center the section. Add the `.content-footer` class to the code that centers your three middle sections. Your code should look like this:
+2. In CSS, you're now able to center the section. Add the `.content-footer` class to the code that centers your three middle sections. Your code should look like this:
 
     ```css
     .content-footer,
@@ -424,7 +426,7 @@ Steps:
     }
     ```
 
-    You using a specific selector here. `.social > li` selects all of the `<li>`s tags within the `.social` class. The `>` selector means that only li elements that are direct children of the `.social` class will be displayed as inline-blocks.
+  You using a specific selector here. `.social > li` selects all of the `<li>`s tags within the `.social` class. The `>` selector means that only li elements that are direct children of the `.social` class will be displayed as inline-blocks.
 
 5. In your CSS, style this tiny paragraph so that the text is white. Your CSS should look like this:
 
@@ -434,8 +436,7 @@ Steps:
     }
     ```
 
-Theory:
-
+*Theory:*
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring `margin-left: auto;`, `margin-right:auto;`. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
@@ -478,7 +479,6 @@ Your HTML should look like this:
     </ul>
 </footer>
 ```
-
 
 Your CSS should look like this:
 
@@ -559,7 +559,8 @@ Let's change our fonts!
     }
     ```
 
-    To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color. `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
+  To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color.
+`font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
 
 2. Style the fonts ofyour `masthead-intro` and `masthead-heading` classes.
 
@@ -592,7 +593,7 @@ Let's change our fonts!
     }
     ```
 
-    Finally, style your questions.
+  Finally, style your questions.
 
     ```css
     .questions-section > h2 {
@@ -704,24 +705,20 @@ Let's add the final touches to get your site looking beautful now that we have t
     }
     ```
 
-Other CSS Style Effects
+##Other CSS Style Effects
 Finally, you can add a ton of awesome visual effects with CSS. Here's a list of a few cool ones with links to tutorials if you want to try them out.
 
 * box-shadow: http://css-tricks.com/snippets/css/css-box-shadow/
 * text-shadow: http://css-tricks.com/snippets/css/css-text-shadow/
 * border-radius: http://css-tricks.com/almanac/properties/b/border-radius/
 
-##Challenge: Get your site live using Github pages
+##Challenge: Get your site live using GitHub pages
 
 You've worked hard to get your site running locally. Now let's share it with the world! You can use a service called Github pages to get your site up and on the internet for free. Go through our [github pages guide](http://www.thinkful.com/learn/a-guide-to-using-github-pages/) that will walk you through just that.
 
-NOTE: What is Github? Besides having this awesome feature for hosting webpages, Github is a way for programmers to easily store and share code online. Github uses a software called git that allows you to track changes and the history of your projects.
+*NOTE:*
+What is Github? Besides having this awesome feature for hosting webpages, Github is a way for programmers to easily store and share code online. Github uses a software called git that allows you to track changes and the history of your projects.
 
 ##Conclusion
 
-Tweet your new site to us so we can brag about how awesome you are! Thanks for walking through our guide. If you have any feedback whatsoever tweet @Thinkful so we can update this guide.
-
-
-
-
-
+Tweet your new site to us so we can brag about how awesome you are! Thanks for walking through our guide. If you have any feedback whatsoever tweet <a href="https://twitter.com/thinkful">@Thinkful</a> so we can update this guide.
