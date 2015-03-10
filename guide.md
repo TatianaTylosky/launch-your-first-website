@@ -4,7 +4,7 @@
 
 ###Your mission:
 
-You're going to build and launch your own amazing "About Me" website! AND it will be totally free. Sound to good to be true? <a href="http://i.imgur.com/A688v8m.png" target="_blank">False</a>.
+You're going to build and launch your own amazing "About Me" website! AND it will be totally free. Sound too good to be true? <a href="http://i.imgur.com/A688v8m.png" target="_blank">False</a>.
 
 Here is <a href="http://tatianatylosky.github.io/personal-website-example/" target="_blank">the example</a> we will be referring to throughout this guide:
 
@@ -239,7 +239,7 @@ Box Model:
 
 Around any element are 3 layers of space: 1) padding, 2) border, and 3) margin. Increasing padding increases the distance between your element and its border. Increasing  a margin adds more space outside of your element's border.
 
-Using em: Ems are a unit of measure that isn't fixed like inches or centimeters. A centimenter is the same width anywhere in the world, ems are relative to the current font size. What's the current font size? That's dependent on your computer's browser. For most computer browsers, an "em" is equal to 16px. It's best practice to use ems in web development because it's common for content to be viewed on several different devices -- cell phones, tablets, desktop computers, even smart watches. Using ems makes it easier to adapt the content for each screen.
+Using em: Ems are a unit of measure that isn't fixed like inches or centimeters. A centimeter is the same width anywhere in the world, ems are relative to the current font size. What's the current font size? That's dependent on your computer's browser. For most computer browsers, an "em" is equal to 16px. It's best practice to use ems in web development because it's common for content to be viewed on several different devices -- cell phones, tablets, desktop computers, even smart watches. Using ems makes it easier to adapt the content for each screen.
 
 Negative measurements: You're using a negative margin to bring two elements closer together than the standard margin given.
 
@@ -520,7 +520,7 @@ Your CSS should look like this:
 }
 ```
 
-##Key Layout Take-aways:
+##Key Layout Takeaways:
 
 Your site is almost complete. The HTML is well organized and your CSS has positioned all of your elements to match your design's layout. You're well on your way. Before moving onto adjusting typography and colors, recap a few important points from this assignment.
 
@@ -533,9 +533,9 @@ Stack several CSS classes into one selector so they all have the same styles.
 
 - Use display: inline-block; to have all the items within a list display in a single horizontal line.
 
-- Use "em" instead of any fixed measurements (pt, inches, etc.)
-Although relative, 1 em is usually equivalent to 16pt font size
-Each block level element has 3 levels of space around it -- 1) padding, 2) border, and 3) margin.
+- Use "em" instead of any fixed measurements (pt, inches, etc.) Although relative, 1 em is usually equivalent to 16pt font size
+
+- Each block level element has 3 levels of space around it -- 1) padding, 2) border, and 3) margin.
 
 - Make block elements bigger by adding padding to move the border out. (The text won't get bigger, but the border around the text will grow.)
 
@@ -562,7 +562,7 @@ Let's change our fonts!
   To style a font color, use `color` with a HEX code value. A HEX code is simply a 6 digit code that represents a color.
 `font-size` lets you set how large the font appears. Using 1em for the font size means "whatever font size the user has specified." This allows users to apply assistive services of their browser to increase or decrease the font size of the page. Because you're using em for the rest of the measurement units, the layout will handle a variety of font sizes.
 
-2. Style the fonts ofyour `masthead-intro` and `masthead-heading` classes.
+2. Style the fonts of your `masthead-intro` and `masthead-heading` classes.
 
     ```css
     .masthead-intro {
@@ -686,7 +686,7 @@ Now you should have beautiful fonts for your page! In the next section we'll add
 
 ##Add **extra style** to your page
 
-Let's add the final touches to get your site looking beautful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called <a href="https://color.adobe.com/" target="_blank">Adobe Kuler</a> to help pick a color scheme from the image. You can then use the `background-color` property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code but you can also use [147 CSS color names](http://www.colors.commutercreative.com/grid/) if you'd prefer.
+Let's add the final touches to get your site looking beautiful now that we have the formatting down. If you've already picked out an appropriate cover image, you can uses a popular design tool called <a href="https://color.adobe.com/" target="_blank">Adobe Kuler</a> to help pick a color scheme from the image. You can then use the `background-color` property in your CSS to add colors to element backgrounds in your code. Colors in CSS are usually represented as hex code but you can also use [147 CSS color names](http://www.colors.commutercreative.com/grid/) if you'd prefer.
 
 1. Change your footer color. Here's an example for the background-color property that'll turn your footer red:
 
