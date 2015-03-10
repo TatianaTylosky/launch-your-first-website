@@ -231,7 +231,7 @@ We are temporarily making your background blue so that in the next step you can 
 
 11. Refresh index.html file and check out your page!
 
-*Theory:*
+###Theory:
 
 Box Model:
 
@@ -364,7 +364,7 @@ This is an excellent strategy for centering block elements! By setting the `max-
     }
     ```
 
-*Theory:*
+###Theory:
 Classes are powerful attributes, and should be used thoughtfully. When deciding whether to add a class attribute, think about what unique styling the element will have. If all of your Header 1's will look the same, there's no need to use a class for it.
 
 Even if there were slight differences in Header 1's per section, always remember that CSS is "cascading". You can target all of the `<h1>` tags within a section without defining a separate class for them.
@@ -436,7 +436,7 @@ Steps:
     }
     ```
 
-*Theory:*
+###Theory:
 So far, you've centered things using two different techniques: 1) text-align: center and 2) by setting the width of an element and declaring `margin-left: auto;`, `margin-right:auto;`. Why? One element was a "block level" element and the other was set to display as an "inline" element. Understanding the difference between "block" elements and "inline" elements will help you make accurate positioning decisions.
 
 Block level elements expand to fill whatever width is available, and drop below other elements if they require more space. Inline elements exist within a section of text, so they run alongside each other like words in a sentence.
